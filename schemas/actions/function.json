@@ -23,12 +23,13 @@
       "__comment": "The list of available values is defined by a set we have available in our framework.",
       "description": "The icon to be displayed in the IDE for this function.",
       "enum": [
-        "AddIcon",
+        "AuthenticateIcon",
+        "ConditionIcon",
         "CreateIcon",
-        "DataIcon",
         "DeleteIcon",
+        "FinishFlagIcon",
+        "LightningIcon",
         "LoopIcon",
-        "SaveIcon",
         "UpdateIcon"
       ]
     },
