@@ -1,0 +1,13 @@
+{
+  "$id": "/options/configuration.json",
+  "title": "Configuration",
+  "description": "The option configurations for things like validation, visibility or defaults.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "placeholder": {
+      "type": "string"
+    }
+  },
+  "required": []
+}

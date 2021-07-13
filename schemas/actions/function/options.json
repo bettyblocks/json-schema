@@ -1,0 +1,46 @@
+{
+  "$id": "schemas/actions/function/options.json",
+  "title": "Options",
+  "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
+  "type": "object",
+  "definitions": {
+    "configuration": { "$ref": "./options/configuration.json" },
+    "opt:boolean": { "$ref": "./options/types/boolean.json" },
+    "opt:integer": { "$ref": "./options/types/integer.json" },
+    "opt:model": { "$ref": "./options/types/model.json" },
+    "opt:record": { "$ref": "./options/types/record.json" },
+    "opt:string": { "$ref": "./options/types/string.json" }
+  },
+  "properties": {
+    "meta": {
+      "oneOf": [
+        {"$ref": "#/definitions/opt:boolean"},
+        {"$ref": "#/definitions/opt:integer"},
+        {"$ref": "#/definitions/opt:model"},
+        {"$ref": "#/definitions/opt:record"},
+        {"$ref": "#/definitions/opt:string"}
+      ]
+    },
+    "name": {
+      "description": "The name of the option. Can be used to reference this option. Should be unique within scope of function.",
+      "type": "string"
+    },
+    "label": {
+      "description": "The label for option, as shown in the IDE.",
+      "type": "string"
+    },
+    "info": {
+      "description": "Can be used to give more info on what this option does.",
+      "type": "string"
+    },
+    "advanced": {
+      "description": "Flag to determine wether to show this in regular or advanced options.",
+      "type": "boolean"
+    },
+    "configuration": {
+      "type": "object",
+      "$ref": "#/definitions/configuration"
+    }
+  },
+  "required": ["meta", "name", "label"]
+}

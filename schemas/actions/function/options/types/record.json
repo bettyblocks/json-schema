@@ -1,0 +1,17 @@
+{
+  "$id": "/options/types/record.json",
+  "title": "Options Type Record",
+  "description": "Properties specific to the Record option type.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "Record"
+    },
+    "model": {
+      "description": "The model on which the record is based. Should refer to another option name that has type `Model`.",
+      "type": "string"
+    }
+  },
+  "required": ["model"]
+}

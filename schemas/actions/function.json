@@ -1,0 +1,48 @@
+{
+  "$id": "schemas/actions/function.json",
+  "title": "Function",
+  "description": "A function to be used in the IDE",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name for the function, as used in other functions by the pro-coder.",
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "label": {
+      "description": "The label for the function, as shown in the IDE",
+      "type": "string"
+    },
+    "category": {
+      "description": "The category by which the functions are grouped and shown in the sidebar.",
+      "enum": ["Crud", "Control", "Misc"]
+    },
+    "icon": {
+      "__comment": "The list of available values is defined by a set we have available in our framework.",
+      "description": "The icon to be displayed in the IDE for this function.",
+      "enum": [
+        "AddIcon",
+        "CreateIcon",
+        "DataIcon",
+        "DeleteIcon",
+        "LoopIcon",
+        "SaveIcon",
+        "UpdateIcon"
+      ]
+    },
+    "options": {
+      "description": "The options that you want configured for the action. These can be referred by name inside the function",
+      "type": "array",
+      "items": {
+        "$ref": "./function/options.json"
+      }
+    },
+    "yields": {
+      "description": "Determines wether the function can have other functions nested and if so, what the behaviour should be for executing those functions",
+      "enum": ["none", "one", "all"]
+    }
+  },
+  "required": ["name", "label", "category", "icon", "yields"]
+}
