@@ -8,16 +8,16 @@
       "description": "The name for the function, as used in other functions by the pro-coder.",
       "type": "string"
     },
-    "description": {
-      "type": "string"
-    },
     "label": {
       "description": "The label for the function, as shown in the IDE",
       "type": "string"
     },
+    "description": {
+      "type": "string"
+    },
     "category": {
       "description": "The category by which the functions are grouped and shown in the sidebar.",
-      "enum": ["Crud", "Control", "Misc"]
+      "type": "string"
     },
     "icon": {
       "__comment": "The list of available values is defined by a set we have available in our framework.",
@@ -45,5 +45,5 @@
       "enum": ["none", "one", "all"]
     }
   },
-  "required": ["name", "label", "category", "icon", "yields"]
+  "required": ["name", "label", "description", "category", "icon", "yields"]
 }
