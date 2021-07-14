@@ -1,5 +1,5 @@
 {
-  "$id": "/options/configuration.json",
+  "$id": "schemas/actions/function/options/configuration.json",
   "title": "Configuration",
   "description": "The option configurations for things like validation, visibility or defaults.",
   "type": "object",

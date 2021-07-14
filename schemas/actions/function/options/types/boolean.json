@@ -1,5 +1,5 @@
 {
-  "$id": "/options/types/boolean.json",
+  "$id": "schemas/actions/function/options/types/boolean.json",
   "title": "Options Type Boolean",
   "description": "Properties specific to the Boolean option type.",
   "type": "object",

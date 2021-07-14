@@ -1,5 +1,5 @@
 {
-  "$id": "/options/types/integer.json",
+  "$id": "schemas/actions/function/options/types/integer.json",
   "title": "Options Type Integer",
   "description": "Properties specific to the Integer option type.",
   "type": "object",

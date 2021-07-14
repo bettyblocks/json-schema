@@ -1,5 +1,5 @@
 {
-  "$id": "/options/types/string.json",
+  "$id": "schemas/actions/function/options/types/string.json",
   "title": "Options Type String",
   "description": "Properties specific to the String option type.",
   "type": "object",

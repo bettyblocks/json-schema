@@ -1,5 +1,5 @@
 {
-  "$id": "/options/types/record.json",
+  "$id": "schemas/actions/function/options/types/record.json",
   "title": "Options Type Record",
   "description": "Properties specific to the Record option type.",
   "type": "object",
