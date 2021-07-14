@@ -1,0 +1,22 @@
+{
+  "$id": "/schemas/actions/function/options/types/integer.json",
+  "title": "Options Type Integer",
+  "description": "Properties specific to the Integer option type.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "Integer"
+    },
+    "min": {
+      "description": "The minimum value of the option",
+      "type": "integer"
+    },
+    "max": {
+      "description": "The maximum value of the option",
+      "type": "integer"
+    }
+
+  },
+  "required": []
+}

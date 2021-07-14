@@ -1,0 +1,13 @@
+{
+  "$id": "/schemas/actions/function/options/types/model.json",
+  "title": "Options Type model",
+  "description": "Properties specific to the Model option type.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "Model"
+    }
+  },
+  "required": []
+}
