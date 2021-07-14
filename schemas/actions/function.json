@@ -37,7 +37,7 @@
       "description": "The options that you want configured for the action. These can be referred by name inside the function",
       "type": "array",
       "items": {
-        "$ref": "./function/options.json"
+        "$ref": "/schemas/actions/function/options.json"
       }
     },
     "yields": {

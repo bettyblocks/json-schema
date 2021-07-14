@@ -1,15 +1,15 @@
 {
-  "$id": "schemas/actions/function/options.json",
+  "$id": "/schemas/actions/function/options.json",
   "title": "Options",
   "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
   "type": "object",
   "definitions": {
-    "configuration": { "$ref": "./options/configuration.json" },
-    "opt:boolean": { "$ref": "./options/types/boolean.json" },
-    "opt:integer": { "$ref": "./options/types/integer.json" },
-    "opt:model": { "$ref": "./options/types/model.json" },
-    "opt:record": { "$ref": "./options/types/record.json" },
-    "opt:string": { "$ref": "./options/types/string.json" }
+    "configuration": { "$ref": "/schemas/actions/function/options/configuration.json" },
+    "opt:boolean": { "$ref": "/schemas/actions/function/options/types/boolean.json" },
+    "opt:integer": { "$ref": "/schemas/actions/function/options/types/integer.json" },
+    "opt:model": { "$ref": "/schemas/actions/function/options/types/model.json" },
+    "opt:record": { "$ref": "/schemas/actions/function/options/types/record.json" },
+    "opt:string": { "$ref": "/schemas/actions/function/options/types/string.json" }
   },
   "properties": {
     "meta": {
