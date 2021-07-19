@@ -8,6 +8,5 @@
     "placeholder": {
       "type": "string"
     }
-  },
-  "required": []
+  }
 }

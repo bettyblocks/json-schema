@@ -12,6 +12,5 @@
       "description": "The default value of the option",
       "type": "boolean"
     }
-  },
-  "required": []
+  }
 }
