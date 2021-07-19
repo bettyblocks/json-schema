@@ -1,10 +1,10 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "/schemas/actions/function/options/types/string.json",
   "title": "Options Type String",
   "description": "Properties specific to the String option type.",
   "type": "object",
-  "allOf": [{"$ref": "./base.json"}],
+  "allOf": [{ "$ref": "./base.json" }],
   "properties": {
     "type": {
       "const": "String"
