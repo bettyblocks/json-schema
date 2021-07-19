@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "/schemas/actions/function/options.json",
   "title": "Options",
   "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
