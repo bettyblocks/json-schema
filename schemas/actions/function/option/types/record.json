@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "/schemas/actions/function/options/types/record.json",
   "title": "Options Type Record",
   "description": "Properties specific to the Record option type.",

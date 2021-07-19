@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "/schemas/actions/function/options/types/integer.json",
   "title": "Options Type Integer",
   "description": "Properties specific to the Integer option type.",
