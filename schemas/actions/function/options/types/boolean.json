@@ -3,7 +3,7 @@
   "title": "Options Type Boolean",
   "description": "Properties specific to the Boolean option type.",
   "type": "object",
-  "additionalProperties": false,
+  "allOf": [{"$ref": "./base.json"}],
   "properties": {
     "type": {
       "const": "Boolean"

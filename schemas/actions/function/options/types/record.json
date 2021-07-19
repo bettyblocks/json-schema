@@ -3,7 +3,7 @@
   "title": "Options Type Record",
   "description": "Properties specific to the Record option type.",
   "type": "object",
-  "additionalProperties": false,
+  "allOf": ["./base.json"],
   "properties": {
     "type": {
       "const": "Record"

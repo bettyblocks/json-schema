@@ -3,7 +3,7 @@
   "title": "Options Type String",
   "description": "Properties specific to the String option type.",
   "type": "object",
-  "additionalProperties": false,
+  "allOf": [{"$ref": "./base.json"}],
   "properties": {
     "type": {
       "const": "String"

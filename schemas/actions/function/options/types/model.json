@@ -3,7 +3,7 @@
   "title": "Options Type model",
   "description": "Properties specific to the Model option type.",
   "type": "object",
-  "additionalProperties": false,
+  "allOf": [{"$ref": "./base.json"}],
   "properties": {
     "type": {
       "const": "Model"

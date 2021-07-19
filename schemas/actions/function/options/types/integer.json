@@ -3,7 +3,7 @@
   "title": "Options Type Integer",
   "description": "Properties specific to the Integer option type.",
   "type": "object",
-  "additionalProperties": false,
+  "allOf": [{"$ref": "./base.json"}],
   "properties": {
     "type": {
       "const": "Integer"
