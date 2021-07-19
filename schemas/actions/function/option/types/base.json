@@ -10,7 +10,7 @@
       "enum": ["Boolean", "Integer", "Model", "Record", "String"]
     },
     "io": {
-      "description": "Determines if this option is input or output. Output should be supplied in the function implementation.",
+      "description": "Determines if this option is input or output. Output should be supplied in the function implementation. Input will be resolved by the Actions engine.",
       "enum": ["in", "out"]
     }
   },
