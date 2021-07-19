@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "/schemas/actions/function/options.json",
+  "$id": "/schemas/actions/function/option.json",
   "title": "Options",
   "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
   "type": "object",
@@ -32,7 +32,7 @@
     },
     "configuration": {
       "type": "object",
-      "$ref": "./options/configuration.json"
+      "$ref": "./option/configuration.json"
     }
   },
   "required": ["meta", "name", "label"]

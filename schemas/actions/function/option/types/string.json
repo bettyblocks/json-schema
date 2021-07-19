@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "/schemas/actions/function/options/types/string.json",
+  "$id": "/schemas/actions/function/option/types/string.json",
   "title": "Options Type String",
   "description": "Properties specific to the String option type.",
   "type": "object",
