@@ -16,7 +16,5 @@
       "description": "The maximum value of the option",
       "type": "integer"
     }
-
-  },
-  "required": []
+  }
 }
