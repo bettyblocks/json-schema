@@ -5,6 +5,7 @@
   "type": "object",
   "properties": {
     "type": {
+      "description": "The type of option you want to supply. Examples are: Boolean, Integer and Model.",
       "enum": [
         "Boolean",
         "Integer",
@@ -14,6 +15,7 @@
       ]
     },
     "io": {
+      "description": "Determines if this option is input or output. Output should be supplied in the function implementation.",
       "enum": ["in", "out"]
     }
   },

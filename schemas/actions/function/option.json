@@ -6,11 +6,11 @@
   "properties": {
     "meta": {
       "oneOf": [
-        { "$ref": "./options/types/boolean.json" },
-        { "$ref": "./options/types/integer.json" },
-        { "$ref": "./options/types/model.json" },
-        { "$ref": "./options/types/record.json" },
-        { "$ref": "./options/types/string.json" }
+        { "$ref": "./option/types/boolean.json" },
+        { "$ref": "./option/types/integer.json" },
+        { "$ref": "./option/types/model.json" },
+        { "$ref": "./option/types/record.json" },
+        { "$ref": "./option/types/string.json" }
       ]
     },
     "name": {
