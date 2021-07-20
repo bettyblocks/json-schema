@@ -1,17 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "/schemas/actions/function/option.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option",
   "title": "Options",
   "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
   "type": "object",
   "properties": {
     "meta": {
       "oneOf": [
-        { "$ref": "./option/types/boolean.json" },
-        { "$ref": "./option/types/integer.json" },
-        { "$ref": "./option/types/model.json" },
-        { "$ref": "./option/types/record.json" },
-        { "$ref": "./option/types/string.json" }
+        { "$ref": "/option/types/boolean.json" },
+        { "$ref": "/option/types/integer.json" },
+        { "$ref": "/option/types/model.json" },
+        { "$ref": "/option/types/record.json" },
+        { "$ref": "/option/types/string.json" }
       ]
     },
     "name": {
