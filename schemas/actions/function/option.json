@@ -7,11 +7,21 @@
   "properties": {
     "meta": {
       "oneOf": [
-        { "$ref": "/option/types/boolean.json" },
-        { "$ref": "/option/types/integer.json" },
-        { "$ref": "/option/types/model.json" },
-        { "$ref": "/option/types/record.json" },
-        { "$ref": "/option/types/string.json" }
+        {
+          "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/boolean.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/integer.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/model.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/record.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/string.json"
+        }
       ]
     },
     "name": {
