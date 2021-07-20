@@ -38,7 +38,7 @@
       "description": "The options that you want configured for the action. These can be referred by name inside the function",
       "type": "array",
       "items": {
-        "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option"
+        "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option.json"
       }
     },
     "yields": {
