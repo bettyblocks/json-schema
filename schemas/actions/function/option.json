@@ -42,7 +42,7 @@
     },
     "configuration": {
       "type": "object",
-      "$ref": "./option/configuration.json"
+      "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/configuration.json"
     }
   },
   "required": ["meta", "name", "label"]
