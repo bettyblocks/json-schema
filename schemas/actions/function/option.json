@@ -1,16 +1,27 @@
 {
-  "$id": "/schemas/actions/function/options.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option.json",
   "title": "Options",
   "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
   "type": "object",
   "properties": {
     "meta": {
       "oneOf": [
-        { "$ref": "/schemas/actions/function/options/types/boolean.json" },
-        { "$ref": "/schemas/actions/function/options/types/integer.json" },
-        { "$ref": "/schemas/actions/function/options/types/model.json" },
-        { "$ref": "/schemas/actions/function/options/types/record.json" },
-        { "$ref": "/schemas/actions/function/options/types/string.json" }
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/boolean.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/integer.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/model.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/record.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/string.json"
+        }
       ]
     },
     "name": {
@@ -31,7 +42,7 @@
     },
     "configuration": {
       "type": "object",
-      "$ref": "/schemas/actions/function/options/configuration.json"
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/configuration.json"
     }
   },
   "required": ["meta", "name", "label"]

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/string.json",
+  "title": "Options Type String",
+  "description": "Properties specific to the String option type.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "String"
+    },
+    "default": {
+      "description": "The default value of the option",
+      "type": "string"
+    }
+  }
+}
