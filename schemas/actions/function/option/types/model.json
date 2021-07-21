@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/model.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/fix/resolve-remote-schema-2/schemas/actions/function/option/types/model.json",
   "title": "Options Type model",
   "description": "Properties specific to the Model option type.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/base.json"
+      "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema-2/schemas/actions/function/option/types/base.json"
     }
   ],
   "properties": {

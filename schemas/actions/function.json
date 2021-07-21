@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/fix/resolve-remote-schema-2/schemas/actions/function.json",
   "title": "Function",
   "description": "A function to be used in the IDE",
   "type": "object",
@@ -38,7 +38,7 @@
       "description": "The options that you want configured for the action. These can be referred by name inside the function",
       "type": "array",
       "items": {
-        "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option.json"
+        "$ref": "/bettyblocks/json-schema/fix/resolve-remote-schema-2/schemas/actions/function/option.json"
       }
     },
     "yields": {
