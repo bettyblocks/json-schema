@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/base",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/fix/resolve-remote-schema/schemas/actions/function/option/types/base.json",
   "title": "Base",
   "description": "The base properties that are required for all options.",
   "type": "object",
