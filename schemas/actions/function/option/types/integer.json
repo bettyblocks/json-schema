@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/integer.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/integer.json",
   "title": "Options Type Integer",
   "description": "Properties specific to the Integer option type.",
   "type": "object",
