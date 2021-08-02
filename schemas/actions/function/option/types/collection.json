@@ -18,5 +18,14 @@
       "type": "string"
     }
   },
-  "required": ["model"]
+  "if": {
+    "properties": {
+      "io": {
+        "const": "out"
+      }
+    }
+  },
+  "then": {
+    "required": ["model"]
+  }
 }
