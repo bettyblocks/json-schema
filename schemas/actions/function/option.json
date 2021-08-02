@@ -11,6 +11,9 @@
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/boolean.json"
         },
         {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/collection.json"
+        },
+        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/integer.json"
         },
         {

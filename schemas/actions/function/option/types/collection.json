@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/record.json",
-  "title": "Options Type Record",
-  "description": "Properties specific to the Record option type.",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/collection.json",
+  "title": "Options Type Collection",
+  "description": "Properties specific to the Collection option type.",
   "type": "object",
   "allOf": [
     {
@@ -11,10 +11,10 @@
   ],
   "properties": {
     "type": {
-      "const": "Record"
+      "const": "Collection"
     },
     "model": {
-      "description": "The model on which the record is based. Should refer to another option name which is model based.",
+      "description": "The model on which the collection is based. Should refer to another option name which is model based.",
       "type": "string"
     }
   },
