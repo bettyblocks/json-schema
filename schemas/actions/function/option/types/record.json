@@ -14,7 +14,7 @@
       "const": "Record"
     },
     "model": {
-      "description": "The model on which the record is based. Should refer to another option name that has type `Model`.",
+      "description": "The model on which the record is based. Should refer to another option name which is model based.",
       "type": "string"
     }
   },

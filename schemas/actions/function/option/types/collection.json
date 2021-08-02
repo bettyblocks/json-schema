@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/collection.json",
+  "title": "Options Type Collection",
+  "description": "Properties specific to the Collection option type.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "Collection"
+    },
+    "model": {
+      "description": "The model on which the collection is based. Should refer to another option name which is model based.",
+      "type": "string"
+    }
+  },
+  "required": ["model"]
+}
