@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/string.json",
-  "title": "Options Type String",
-  "description": "Properties specific to the String option type.",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/text.json",
+  "title": "Options Type Text",
+  "description": "Properties specific to the Text option type.",
   "type": "object",
   "allOf": [
     {
@@ -11,7 +11,7 @@
   ],
   "properties": {
     "type": {
-      "const": "String"
+      "const": "Text"
     },
     "default": {
       "description": "The default value of the option",
