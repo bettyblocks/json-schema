@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/integer.json",
-  "title": "Options Type Integer",
-  "description": "Properties specific to the Integer option type.",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/number.json",
+  "title": "Options Type Number",
+  "description": "Properties specific to the Number option type.",
   "type": "object",
   "allOf": [
     {
@@ -11,7 +11,7 @@
   ],
   "properties": {
     "type": {
-      "const": "Integer"
+      "const": "Number"
     },
     "min": {
       "description": "The minimum value of the option",

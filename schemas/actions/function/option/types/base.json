@@ -6,8 +6,8 @@
   "type": "object",
   "properties": {
     "type": {
-      "description": "The type of option you want to supply. Examples are: Boolean, Integer and Model.",
-      "enum": ["Boolean", "Collection", "Integer", "Model", "Record", "String"]
+      "description": "The type of option you want to supply. Examples are: Boolean, Number and Model.",
+      "enum": ["Boolean", "Collection", "Number", "Model", "Record", "Text"]
     },
     "io": {
       "description": "Determines if this option is input or output. Output should be supplied in the function implementation. Input will be resolved by the Actions engine.",
