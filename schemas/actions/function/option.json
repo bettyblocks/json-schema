@@ -8,6 +8,9 @@
     "meta": {
       "oneOf": [
         {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/assign.json"
+        },
+        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/boolean.json"
         },
         {

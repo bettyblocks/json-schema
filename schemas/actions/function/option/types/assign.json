@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/assign.json",
+  "title": "Options Type Assign",
+  "description": "Properties specific to the Assign option type.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "Assign"
+    },
+    "model": {
+      "description": "The model on which the properties are based. Should refer to another option name which is model based.",
+      "type": "string"
+    }
+  }
+}
