@@ -7,12 +7,20 @@
   "properties": {
     "type": {
       "description": "The type of option you want to supply. Examples are: Boolean, Number and Model.",
-      "enum": ["Assign", "Boolean", "Collection", "Number", "Model", "Record", "Text"]
+      "enum": ["PropertyMap", "Boolean", "Collection", "Number", "Model", "Record", "Text"]
     },
-    "io": {
-      "description": "Determines if this option is input or output. Output should be supplied in the function implementation. Input will be resolved by the Actions engine.",
-      "enum": ["in", "out"]
+    "dependsOn": {
+      "description": "List of other options that this option depends on.",
+      "type": "array",
+      "items": {
+        "option": {
+          "type": "string"
+        },
+        "action": {
+          "enum": ["CLEAR"]
+        }
+      }
     }
   },
-  "required": ["type", "io"]
+  "required": ["type"]
 }
