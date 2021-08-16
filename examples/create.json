@@ -1,0 +1,52 @@
+{
+  "name": "create",
+  "description": "Create a record for a given model",
+  "label": "Create Record",
+  "category": "CRUD",
+  "icon": "CreateIcon",
+  "options": [
+    {
+      "meta": {
+        "type": "Model"
+      },
+      "name": "givenModel",
+      "label": "Model",
+      "description": "The model you want to create a record for.",
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "meta": {
+        "type": "PropertyMap",
+        "model": "givenModel"
+      },
+      "name": "mapping",
+      "label": "Value Mapping",
+      "description": "Mapping of values to properties for the created record. The properties are based on the model selected.",
+      "dependsOn": [
+        {
+          "option": "selectedModel",
+          "action": "CLEAR"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Record",
+          "model": "givenModel"
+        }
+      },
+      "name": "output",
+      "label": "as",
+      "description": "The name of the variable you want for the newly created record",
+      "validations": {
+        "required": true,
+        "minLength": 3,
+        "maxLength": 10
+      }
+    }
+  ]
+}
