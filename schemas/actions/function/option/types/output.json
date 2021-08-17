@@ -5,6 +5,9 @@
   "description": "Properties specific to the Output option type.",
   "type": "object",
   "definitions": {
+    "base": {
+      "enum": ["Boolean", "Number", "Text"]
+    },
     "record": {
       "type": "object",
       "properties": {
@@ -17,13 +20,17 @@
       },
       "required": ["model"]
     },
-    "text": {
+    "collection": {
       "type": "object",
       "properties": {
         "type": {
-          "const": "Text"
+          "const": "Collection"
+        },
+        "model": {
+          "type": "string"
         }
-      }
+      },
+      "required": ["model"]
     }
   },
   "allOf": [
@@ -37,8 +44,9 @@
     },
     "output": {
       "anyOf": [
-        {"$ref": "#definitions/record"},
-        {"$ref": "#definitions/text"}
+        {"$ref": "#definitions/base"},
+        {"$ref": "#definitions/collection"},
+        {"$ref": "#definitions/record"}
       ]
     }
   }

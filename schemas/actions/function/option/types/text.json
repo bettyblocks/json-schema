@@ -23,12 +23,6 @@
       "properties": {
         "required": {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#definitions/required"
-        },
-        "minLength": {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#definitions/minLength"
-        },
-        "maxLength": {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#definitions/maxLength"
         }
       }
     }

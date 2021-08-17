@@ -35,7 +35,7 @@
       "meta": {
         "type": "Output",
         "output": {
-          "type": "Record",
+          "type": "Collection",
           "model": "givenModel"
         }
       },
@@ -43,9 +43,7 @@
       "label": "as",
       "info": "The name of the variable you want for the newly created record",
       "validations": {
-        "required": true,
-        "minLengthx": 3,
-        "maxLength": 10
+        "required": true
       }
     }
   ],

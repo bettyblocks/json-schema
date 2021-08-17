@@ -8,12 +8,6 @@
     "required": {
       "type": "boolean"
     },
-    "minLength": {
-      "type": "integer"
-    },
-    "maxLength": {
-      "type": "integer"
-    },
     "min": {
       "type": "integer"
     },
