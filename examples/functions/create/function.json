@@ -11,7 +11,7 @@
       },
       "name": "givenModel",
       "label": "Model",
-      "description": "The model you want to create a record for.",
+      "info": "The model you want to create a record for.",
       "validations": {
         "required": true
       }
@@ -23,7 +23,7 @@
       },
       "name": "mapping",
       "label": "Value Mapping",
-      "description": "Mapping of values to properties for the created record. The properties are based on the model selected.",
+      "info": "Mapping of values to properties for the created record. The properties are based on the model selected.",
       "dependsOn": [
         {
           "option": "selectedModel",
@@ -41,12 +41,13 @@
       },
       "name": "output",
       "label": "as",
-      "description": "The name of the variable you want for the newly created record",
+      "info": "The name of the variable you want for the newly created record",
       "validations": {
         "required": true,
-        "minLength": 3,
+        "minLengthx": 3,
         "maxLength": 10
       }
     }
-  ]
+  ],
+  "yields": "NONE"
 }
