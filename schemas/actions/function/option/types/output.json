@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/output.json",
+  "title": "Options Type Output",
+  "description": "Properties specific to the Output option type.",
+  "type": "object",
+  "definitions": {
+    "record": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "Record"
+        },
+        "model": {
+          "type": "string"
+        }
+      },
+      "required": ["model"]
+    },
+    "text": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "Text"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "Output"
+    },
+    "output": {
+      "anyOf": [
+        {"$ref": "#definitions/record"},
+        {"$ref": "#definitions/text"}
+      ]
+    }
+  }
+}

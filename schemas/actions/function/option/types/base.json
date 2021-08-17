@@ -7,7 +7,16 @@
   "properties": {
     "type": {
       "description": "The type of option you want to supply. Examples are: Boolean, Number and Model.",
-      "enum": ["PropertyMap", "Boolean", "Collection", "Number", "Model", "Record", "Text"]
+      "enum": [
+        "Boolean",
+        "Collection",
+        "Model",
+        "Number",
+        "Output",
+        "PropertyMap",
+        "Record",
+        "Text"
+      ]
     },
     "dependsOn": {
       "description": "List of other options that this option depends on.",

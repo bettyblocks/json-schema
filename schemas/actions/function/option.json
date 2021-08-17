@@ -8,19 +8,22 @@
     "meta": {
       "oneOf": [
         {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/assign.json"
-        },
-        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/boolean.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/collection.json"
         },
         {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/model.json"
+        },
+        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/number.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/model.json"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/output.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/property-map.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/record.json"
