@@ -26,7 +26,7 @@
       "info": "Mapping of values to properties for the created record. The properties are based on the model selected.",
       "dependsOn": [
         {
-          "option": "selectedModel",
+          "option": "givenModel",
           "action": "CLEAR"
         }
       ]
