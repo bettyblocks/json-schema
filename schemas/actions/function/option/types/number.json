@@ -13,13 +13,20 @@
     "type": {
       "const": "Number"
     },
-    "min": {
-      "description": "The minimum value of the option",
-      "type": "integer"
-    },
-    "max": {
-      "description": "The maximum value of the option",
-      "type": "integer"
+    "validations": {
+      "description": "The requirements for the given option.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#definitions/required"
+        },
+        "min": {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#definitions/min"
+        },
+        "max": {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#definitions/max"
+        }
+      }
     }
   }
 }
