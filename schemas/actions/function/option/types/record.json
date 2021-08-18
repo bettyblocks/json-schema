@@ -17,15 +17,5 @@
       "description": "The model on which the record is based. Should refer to another option name which is model based.",
       "type": "string"
     }
-  },
-  "if": {
-    "properties": {
-      "io": {
-        "const": "out"
-      }
-    }
-  },
-  "then": {
-    "required": ["model"]
   }
 }
