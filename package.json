@@ -1,0 +1,6 @@
+{
+  "name": "json-schema",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

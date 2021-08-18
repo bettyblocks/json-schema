@@ -3,7 +3,7 @@ The JSON schemas for CLI related entities.
 
 ## Host schema locally
 
-To host this schema locally, have Node (v14.2.0) installed and run `node server.js` from the root of this project.
+To host this schema locally, have Node (v14.2.0) installed and run `npm start` from the root of this project.
 You can then visit http://localhost:9797/bettyblocks/json-schema/master/schemas/actions/function.json to view the schema in the browser.
 
 ## VSC
