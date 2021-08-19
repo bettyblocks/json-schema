@@ -22,7 +22,7 @@
       "type": "object",
       "properties": {
         "required": {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#definitions/required"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#/definitions/required"
         }
       }
     }

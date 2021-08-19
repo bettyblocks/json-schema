@@ -44,9 +44,9 @@
     },
     "output": {
       "anyOf": [
-        {"$ref": "#definitions/base"},
-        {"$ref": "#definitions/collection"},
-        {"$ref": "#definitions/record"}
+        { "$ref": "#/definitions/base" },
+        { "$ref": "#/definitions/collection" },
+        { "$ref": "#/definitions/record" }
       ]
     }
   }
