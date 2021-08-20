@@ -6,7 +6,12 @@
   "type": "object",
   "definitions": {
     "base": {
-      "enum": ["Boolean", "Number", "Text"]
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": ["Boolean", "Number", "Text"]
+        }
+      }
     },
     "record": {
       "type": "object",
