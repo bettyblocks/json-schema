@@ -1,0 +1,58 @@
+{
+  "name": "loop",
+  "description": "Loop over a list of items. In each iteration, the item as well as the index are available. Outputs the total count of items iterated.",
+  "label": "Loop",
+  "category": "CONTROL",
+  "icon": "LoopIcon",
+  "options": [
+    {
+      "meta": {
+        "type": "Collection"
+      },
+      "name": "through",
+      "label": "Collection",
+      "info": "The collection you want to loop over.",
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Record",
+          "model": "through",
+          "scoped": true
+        }
+      },
+      "name": "as",
+      "label": "As",
+      "info": "The item for the current iteration."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number",
+          "scoped": true
+        }
+      },
+      "name": "index",
+      "label": "Index",
+      "info": "The index of the current iteration. Starts at 0 for the first iteration."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number",
+          "scoped": false
+        }
+      },
+      "name": "count",
+      "label": "Total count",
+      "info": "Total count of the items that were iterated over."
+    }
+  ],
+  "yields": "ALL"
+}
