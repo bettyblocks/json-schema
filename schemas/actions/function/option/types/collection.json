@@ -12,10 +12,6 @@
   "properties": {
     "type": {
       "const": "Collection"
-    },
-    "model": {
-      "description": "The model on which the collection is based. Should refer to another option name which is model based.",
-      "type": "string"
     }
   }
 }
