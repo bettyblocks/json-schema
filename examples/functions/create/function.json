@@ -1,6 +1,6 @@
 {
   "name": "create",
-  "description": "Create a record for a given model",
+  "description": "Create a record for a selected model",
   "label": "Create Record",
   "category": "CRUD",
   "icon": "CreateIcon",
@@ -9,7 +9,7 @@
       "meta": {
         "type": "Model"
       },
-      "name": "givenModel",
+      "name": "selectedModel",
       "label": "Model",
       "info": "The model you want to create a record for.",
       "validations": {
@@ -19,14 +19,14 @@
     {
       "meta": {
         "type": "PropertyMap",
-        "model": "givenModel"
+        "model": "selectedModel"
       },
       "name": "mapping",
       "label": "Value Mapping",
       "info": "Mapping of values to properties for the created record. The properties are based on the model selected.",
       "dependsOn": [
         {
-          "option": "givenModel",
+          "option": "selectedModel",
           "action": "CLEAR"
         }
       ]
@@ -35,8 +35,8 @@
       "meta": {
         "type": "Output",
         "output": {
-          "type": "Collection",
-          "model": "givenModel"
+          "type": "Record",
+          "model": "selectedModel"
         }
       },
       "name": "output",
