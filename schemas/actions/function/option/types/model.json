@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/model.json",
-  "title": "Options Type model",
+  "title": "Options Type Model",
   "description": "Properties specific to the Model option type.",
   "type": "object",
   "allOf": [
