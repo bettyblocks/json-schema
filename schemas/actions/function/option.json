@@ -8,6 +8,9 @@
     "meta": {
       "oneOf": [
         {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/authentication-profile.json"
+        },
+        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/boolean.json"
         },
         {

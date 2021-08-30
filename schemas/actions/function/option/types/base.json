@@ -8,6 +8,7 @@
     "type": {
       "description": "The type of option you want to supply. Examples are: Boolean, Number and Model.",
       "enum": [
+        "AuthenticationProfile",
         "Boolean",
         "Collection",
         "Model",
