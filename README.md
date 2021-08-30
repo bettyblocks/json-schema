@@ -1,4 +1,5 @@
 # json-schema
+
 The JSON schemas for CLI related entities.
 
 ## Host schema locally
@@ -11,10 +12,23 @@ You can then visit http://localhost:9797/bettyblocks/json-schema/master/schemas/
 To use this schema in Visual Studio Code, add the following to the `json.schemas` settings:
 
 ```
-"url": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function.json"
+{
+  "fileMatch": [
+      "/functions/**/function.json",
+  ],
+  "url": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function.json"
+}
 ```
+
 or
+
 ```
-"url": "http://localhost:9797/bettyblocks/json-schema/master/schemas/actions/function.json"
+{
+  "fileMatch": [
+      "/functions/**/function.json",
+  ],
+  "url": "http://localhost:9797/bettyblocks/json-schema/master/schemas/actions/function.json"
+}
 ```
+
 respectively, depending on wether you want to use the current master version or the locally hosted version.
