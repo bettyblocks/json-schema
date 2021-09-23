@@ -1,0 +1,32 @@
+{
+  "name": "authenticate",
+  "description": "Generate a token for the user.",
+  "label": "Authenticate User",
+  "category": "CRUD",
+  "icon": "AuthenticateIcon",
+  "yields": "NONE",
+  "options": [
+    {
+      "meta": {
+        "type": "AuthenticationProfile",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "authentication_profile",
+      "label": "Authentication Profile",
+      "info": "The Authentication Profile you want the user to login for."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "jwt",
+      "label": "JWT as",
+      "info": "The name of the JWT that is generated"
+    }
+  ]
+}
