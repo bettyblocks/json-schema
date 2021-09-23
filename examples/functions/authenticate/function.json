@@ -2,7 +2,7 @@
   "name": "authenticate",
   "description": "Generate a token for the user.",
   "label": "Authenticate User",
-  "category": "CRUD",
+  "category": "AUTH",
   "icon": "AuthenticateIcon",
   "yields": "NONE",
   "options": [
