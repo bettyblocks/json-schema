@@ -17,6 +17,9 @@
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/collection.json"
         },
         {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/map.json"
+        },
+        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/model.json"
         },
         {

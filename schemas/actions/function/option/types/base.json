@@ -11,6 +11,7 @@
         "AuthenticationProfile",
         "Boolean",
         "Collection",
+        "Map",
         "Model",
         "Number",
         "Output",
