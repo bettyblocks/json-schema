@@ -32,6 +32,9 @@
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/record.json"
         },
         {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/select.json"
+        },
+        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/text.json"
         }
       ]
