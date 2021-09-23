@@ -4,11 +4,6 @@
   "title": "Options Type PropertyMap",
   "description": "Properties specific to the PropertyMap option type.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
-    }
-  ],
   "properties": {
     "type": {
       "const": "PropertyMap"

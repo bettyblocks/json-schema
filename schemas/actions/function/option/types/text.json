@@ -4,11 +4,6 @@
   "title": "Options Type Text",
   "description": "Properties specific to the Text option type.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
-    }
-  ],
   "properties": {
     "type": {
       "const": "Text"

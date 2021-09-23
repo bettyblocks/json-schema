@@ -4,11 +4,6 @@
   "title": "Options Type Record",
   "description": "Properties specific to the Record option type.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
-    }
-  ],
   "properties": {
     "type": {
       "const": "Record"

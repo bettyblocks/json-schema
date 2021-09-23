@@ -4,8 +4,24 @@
   "title": "Options",
   "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "meta": {
+      "properties": {
+        "type": {
+          "enum": [
+            "AuthenticationProfile",
+            "Boolean",
+            "Collection",
+            "Model",
+            "Number",
+            "Output",
+            "PropertyMap",
+            "Record",
+            "Text"
+          ]
+        }
+      },
       "oneOf": [
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/authentication-profile.json"
@@ -34,7 +50,8 @@
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/text.json"
         }
-      ]
+      ],
+      "required": ["type"]
     },
     "name": {
       "description": "The name of the option. Can be used to reference this option. Should be unique within scope of function.",
