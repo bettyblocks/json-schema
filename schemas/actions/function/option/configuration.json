@@ -8,6 +8,18 @@
   "properties": {
     "placeholder": {
       "type": "string"
+    },
+    "dependsOn": {
+      "description": "List of other options that this option depends on.",
+      "type": "array",
+      "items": {
+        "option": {
+          "type": "string"
+        },
+        "action": {
+          "enum": ["CLEAR"]
+        }
+      }
     }
   }
 }
