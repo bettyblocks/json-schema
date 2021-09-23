@@ -13,6 +13,7 @@
         "Collection",
         "Map",
         "Model",
+        "MultilineText",
         "Number",
         "Output",
         "PropertyMap",
