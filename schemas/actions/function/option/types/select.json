@@ -4,11 +4,6 @@
   "title": "Options Type Select",
   "description": "Properties specific to the Select option type.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
-    }
-  ],
   "properties": {
     "type": {
       "const": "Select"
@@ -25,6 +20,15 @@
           "label": {
             "type": "string"
           }
+        }
+      }
+    },
+    "validations": {
+      "description": "The requirements for the given option.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#/definitions/required"
         }
       }
     }
