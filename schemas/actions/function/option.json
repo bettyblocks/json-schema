@@ -17,6 +17,8 @@
             "Number",
             "Output",
             "PropertyMap",
+            "Select",
+            "MulitlineText",
             "Record",
             "Text"
           ]
