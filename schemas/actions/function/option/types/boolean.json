@@ -4,11 +4,6 @@
   "title": "Options Type Boolean",
   "description": "Properties specific to the Boolean option type.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
-    }
-  ],
   "properties": {
     "type": {
       "const": "Boolean"
@@ -16,6 +11,15 @@
     "default": {
       "description": "The default value of the option",
       "type": "boolean"
+    },
+    "validations": {
+      "description": "The requirements for the given option.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#/definitions/required"
+        }
+      }
     }
   }
 }

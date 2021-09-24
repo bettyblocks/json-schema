@@ -38,11 +38,6 @@
       "required": ["model"]
     }
   },
-  "allOf": [
-    {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
-    }
-  ],
   "properties": {
     "type": {
       "const": "Output"
@@ -56,6 +51,15 @@
         { "$ref": "#/definitions/collection" },
         { "$ref": "#/definitions/record" }
       ]
+    },
+    "validations": {
+      "description": "The requirements for the given option.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#/definitions/required"
+        }
+      }
     }
   }
 }

@@ -4,11 +4,6 @@
   "title": "Options Type Number",
   "description": "Properties specific to the Number option type.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
-    }
-  ],
   "properties": {
     "type": {
       "const": "Number"

@@ -7,14 +7,14 @@
   "options": [
     {
       "meta": {
-        "type": "Model"
+        "type": "Model",
+        "validations": {
+          "required": true
+        }
       },
       "name": "selectedModel",
       "label": "Model",
-      "info": "The model you want to create a record for.",
-      "validations": {
-        "required": true
-      }
+      "info": "The model you want to create a record for."
     },
     {
       "meta": {
@@ -37,14 +37,14 @@
         "output": {
           "type": "Record",
           "model": "selectedModel"
+        },
+        "validations": {
+          "required": true
         }
       },
       "name": "output",
       "label": "as",
-      "info": "The name of the variable you want for the newly created record",
-      "validations": {
-        "required": true
-      }
+      "info": "The name of the variable you want for the newly created record"
     }
   ],
   "yields": "NONE"
