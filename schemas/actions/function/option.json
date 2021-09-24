@@ -33,7 +33,13 @@
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/collection.json"
         },
         {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/map.json"
+        },
+        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/model.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/multiline-text.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/number.json"
@@ -46,6 +52,9 @@
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/record.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/select.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/text.json"
