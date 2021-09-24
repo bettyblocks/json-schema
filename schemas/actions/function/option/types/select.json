@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/select.json",
+  "title": "Options Type Select",
+  "description": "Properties specific to the Select option type.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/base.json"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "Select"
+    },
+    "values": {
+      "description": "The options that you want configured for the select.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": ["values"]
+}
