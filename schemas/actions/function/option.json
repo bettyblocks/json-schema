@@ -13,13 +13,14 @@
             "AuthenticationProfile",
             "Boolean",
             "Collection",
+            "Map",
             "Model",
+            "MultilineText",
             "Number",
             "Output",
             "PropertyMap",
-            "Select",
-            "MultilineText",
             "Record",
+            "Select",
             "Text"
           ]
         }
