@@ -11,6 +11,7 @@
     "allowedKinds": {
       "description": "The options that you want configured for the value.",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "enum": ["STRING", "NUMBER", "BOOLEAN", "RECORD"]
       }
