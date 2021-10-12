@@ -4,6 +4,7 @@
   "title": "Options Type MultilineText",
   "description": "Properties specific to the MultilineText option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "MultilineText"

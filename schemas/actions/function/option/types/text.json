@@ -4,6 +4,7 @@
   "title": "Options Type Text",
   "description": "Properties specific to the Text option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Text"

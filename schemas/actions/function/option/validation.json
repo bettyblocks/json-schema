@@ -4,6 +4,7 @@
   "title": "Validation",
   "description": "The validation definitions for each option.",
   "type": "object",
+  "additionalProperties": false,
   "definitions": {
     "required": {
       "type": "boolean"

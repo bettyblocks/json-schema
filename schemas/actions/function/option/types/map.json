@@ -4,6 +4,7 @@
   "title": "Options Type Map",
   "description": "Properties specific to the Map option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Map"
