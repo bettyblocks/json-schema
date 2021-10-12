@@ -4,6 +4,7 @@
   "title": "Options Type Value",
   "description": "Properties specific to the Value option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Value"

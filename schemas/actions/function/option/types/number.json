@@ -4,6 +4,7 @@
   "title": "Options Type Number",
   "description": "Properties specific to the Number option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Number"

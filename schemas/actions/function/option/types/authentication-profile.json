@@ -4,6 +4,7 @@
   "title": "Options Type AuthenticationProfile",
   "description": "Properties specific to the AuthenticationProfile option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "AuthenticationProfile"

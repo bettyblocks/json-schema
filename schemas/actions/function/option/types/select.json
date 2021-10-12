@@ -4,6 +4,7 @@
   "title": "Options Type Select",
   "description": "Properties specific to the Select option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Select"

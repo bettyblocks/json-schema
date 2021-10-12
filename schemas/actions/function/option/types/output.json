@@ -4,6 +4,7 @@
   "title": "Options Type Output",
   "description": "Properties specific to the Output option type.",
   "type": "object",
+  "additionalProperties": false,
   "definitions": {
     "base": {
       "type": "object",

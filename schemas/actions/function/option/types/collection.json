@@ -4,6 +4,7 @@
   "title": "Options Type Collection",
   "description": "Properties specific to the Collection option type.",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Collection"
