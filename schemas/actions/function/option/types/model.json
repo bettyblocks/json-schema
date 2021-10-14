@@ -9,6 +9,10 @@
     "type": {
       "const": "Model"
     },
+    "source": {
+      "type": "string",
+      "description": "The option on which the models is based"
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
