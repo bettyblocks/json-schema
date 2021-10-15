@@ -9,6 +9,36 @@
     "type": {
       "const": "Record"
     },
+    "additional": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "enum": ["name", "properties"]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "properties": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [
+                        {
+                          "enum": ["name", "kind"]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
