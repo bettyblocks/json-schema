@@ -24,12 +24,14 @@
       "name": "mapping",
       "label": "Value Mapping",
       "info": "Mapping of values to properties for the created record. The properties are based on the model selected.",
-      "dependsOn": [
-        {
-          "option": "selectedModel",
-          "action": "CLEAR"
-        }
-      ]
+      "configuration": {
+        "dependsOn": [
+          {
+            "option": "selectedModel",
+            "action": "CLEAR"
+          }
+        ]
+      }
     },
     {
       "meta": {

@@ -7,14 +7,14 @@
   "options": [
     {
       "meta": {
-        "type": "Collection"
+        "type": "Collection",
+        "validations": {
+          "required": true
+        }
       },
       "name": "through",
       "label": "Collection",
-      "info": "The collection you want to loop over.",
-      "validations": {
-        "required": true
-      }
+      "info": "The collection you want to loop over."
     },
     {
       "meta": {
