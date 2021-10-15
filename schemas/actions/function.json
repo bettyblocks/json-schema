@@ -4,6 +4,7 @@
   "title": "Function",
   "description": "A function to be used in the IDE",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "name": {
       "description": "The name for the function, as used in other functions by the pro-coder.",
