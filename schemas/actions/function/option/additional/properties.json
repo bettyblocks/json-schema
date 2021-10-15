@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/additional/properties.json",
+  "title": "Additional Meta Info Properties",
+  "description": "The definition of additional meta info for properties.",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "enum": ["name", "kind"]
+      }
+    ]
+  },
+  "additionalItems": false
+}

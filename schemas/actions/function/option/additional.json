@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/additional.json",
+  "title": "Additional Meta Info",
+  "description": "The definition of additional meta info.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "model": {
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional/model.json"
+    },
+    "properties": {
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional/properties.json"
+    }
+  }
+}

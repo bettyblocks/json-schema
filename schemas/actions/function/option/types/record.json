@@ -10,34 +10,7 @@
       "const": "Record"
     },
     "additional": {
-      "type": "object",
-      "properties": {
-        "model": {
-          "type": "array",
-          "items": {
-            "oneOf": [
-              {
-                "enum": ["name", "properties"]
-              },
-              {
-                "type": "object",
-                "properties": {
-                  "properties": {
-                    "type": "array",
-                    "items": {
-                      "oneOf": [
-                        {
-                          "enum": ["name", "kind"]
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        }
-      }
+      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional.json"
     },
     "validations": {
       "description": "The requirements for the given option.",
