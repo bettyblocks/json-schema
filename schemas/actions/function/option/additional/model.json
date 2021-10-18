@@ -4,6 +4,8 @@
   "title": "Additional Meta Info Models",
   "description": "The definition of additional meta info for models.",
   "type": "array",
+  "additionalItems": false,
+  "uniqueItems": true,
   "items": {
     "oneOf": [
       {
@@ -18,6 +20,5 @@
         }
       }
     ]
-  },
-  "additionalItems": false
+  }
 }

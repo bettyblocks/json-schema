@@ -4,12 +4,9 @@
   "title": "Additional Meta Info Properties",
   "description": "The definition of additional meta info for properties.",
   "type": "array",
+  "additionalItems": false,
+  "uniqueItems": true,
   "items": {
-    "oneOf": [
-      {
-        "enum": ["name", "kind"]
-      }
-    ]
-  },
-  "additionalItems": false
+    "enum": ["name", "kind"]
+  }
 }
