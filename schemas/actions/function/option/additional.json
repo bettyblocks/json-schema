@@ -8,9 +8,6 @@
   "properties": {
     "model": {
       "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional/model.json"
-    },
-    "properties": {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional/properties.json"
     }
   }
 }
