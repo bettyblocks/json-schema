@@ -1,0 +1,56 @@
+{
+  "name": "update",
+  "description": "Update a record",
+  "label": "Update Record",
+  "category": "CRUD",
+  "icon": "UpdateIcon",
+  "options": [
+    {
+      "meta": {
+        "type": "Record",
+        "additional": {
+          "model": ["name"]
+        },
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "selectedRecord",
+      "label": "Record",
+      "info": "The record you want to update."
+    },
+    {
+      "meta": {
+        "type": "PropertyMap",
+        "model": "selectedRecord"
+      },
+      "name": "mapping",
+      "label": "Value Mapping",
+      "info": "Mapping of values to properties for the updated record. The properties are based on the model of the selected record.",
+      "configuration": {
+        "dependsOn": [
+          {
+            "option": "selectedRecord",
+            "action": "CLEAR"
+          }
+        ]
+      }
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Record",
+          "model": "selectedRecord"
+        },
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "output",
+      "label": "as",
+      "info": "The name of the variable you want for the updated record"
+    }
+  ],
+  "yields": "NONE"
+}

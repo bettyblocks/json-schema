@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/additional/model.json",
+  "title": "Additional Meta Info Models",
+  "description": "The definition of additional meta info for models.",
+  "type": "array",
+  "additionalItems": false,
+  "uniqueItems": true,
+  "items": {
+    "oneOf": [
+      {
+        "enum": ["name", "properties"]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "properties": {
+            "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional/properties.json"
+          }
+        }
+      }
+    ]
+  }
+}
