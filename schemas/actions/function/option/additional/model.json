@@ -9,7 +9,7 @@
   "items": {
     "oneOf": [
       {
-        "enum": ["name", "properties"]
+        "const": "name"
       },
       {
         "type": "object",
