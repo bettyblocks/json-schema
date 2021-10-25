@@ -17,6 +17,7 @@
             "Model",
             "MultilineText",
             "Number",
+            "Object",
             "Output",
             "PropertyMap",
             "Record",
@@ -47,6 +48,9 @@
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/number.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/object.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/output.json"
