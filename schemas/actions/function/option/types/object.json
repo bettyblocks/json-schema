@@ -9,9 +9,6 @@
     "type": {
       "const": "Object"
     },
-    "additional": {
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional.json"
-    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
