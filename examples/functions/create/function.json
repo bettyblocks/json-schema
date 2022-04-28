@@ -1,5 +1,4 @@
 {
-  "name": "create",
   "description": "Create a record for a selected model",
   "label": "Create Record",
   "category": "CRUD",

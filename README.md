@@ -27,8 +27,8 @@ or
   "fileMatch": [
       "/functions/**/function.json",
   ],
-  "url": "http://localhost:9797/bettyblocks/json-schema/master/schemas/actions/function.json"
+  "url": "http://localhost:9797/schemas/actions/function.json"
 }
 ```
 
-respectively, depending on wether you want to use the current master version or the locally hosted version.
+respectively, depending on whether you want to use the current master version or the locally hosted version.

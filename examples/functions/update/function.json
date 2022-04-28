@@ -1,5 +1,4 @@
 {
-  "name": "update",
   "description": "Update a record",
   "label": "Update Record",
   "category": "CRUD",
