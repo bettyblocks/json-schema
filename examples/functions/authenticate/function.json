@@ -1,5 +1,4 @@
 {
-  "name": "authenticate",
   "description": "Generate a token for the user.",
   "label": "Authenticate User",
   "category": "AUTH",

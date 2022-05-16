@@ -6,10 +6,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "name": {
-      "description": "The name for the function, as used in other functions by the pro-coder.",
-      "type": "string"
-    },
     "label": {
       "description": "The label for the function, as shown in the IDE",
       "type": "string"
@@ -47,5 +43,5 @@
       "enum": ["NONE", "ONE", "ALL"]
     }
   },
-  "required": ["name", "label", "description", "category", "icon", "yields"]
+  "required": ["label", "description", "category", "icon", "yields"]
 }
