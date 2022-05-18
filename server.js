@@ -1,34 +1,45 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-const port = 9797;
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
 
-const pathPrefix = '/bettyblocks/json-schema/master';
+const SCHEMA = "http://json-schema.org/draft-07/schema";
+const HOST = "https://raw.githubusercontent.com";
+const PREFIX = "bettyblocks/json-schema/master/";
+const PORT = 9797;
 
-http.createServer((request, response) => {
+const app = express();
 
-  console.log('Request for: ', request.url);
+const serve = (request, response, file) => {
+  console.log("Request for: ", request.url);
+  console.log("Serving: ", file);
 
-  filePath = request.url.replace(pathPrefix, '');
-  fullPath = path.join(process.cwd(), filePath);
-
-  console.log('Serving: ', fullPath);
-
-  fs.readFile(fullPath, function(error, content) {
+  fs.readFile(file, function (error, content) {
     if (error) {
-      if (error.code == 'ENOENT') {
-        response.writeHead(404);
-        response.end('Not Found');
+      if (error.code == "ENOENT") {
+        response.status(404).send("Not Found");
       } else {
-        response.writeHead(500);
-        response.end('Internal Error: ' + error.code + ' ..\n');
+        response.status(500).send("Internal Error: " + error.code + " ..\n");
       }
     } else {
-      response.writeHead(200);
-      response.end(content, 'utf-8');
+      const hostname = `${request.protocol}://${request.headers.host}`;
+      const json = content
+        .toString()
+        .replaceAll(HOST, hostname)
+        .replaceAll(PREFIX, "")
+        .replaceAll(SCHEMA, `${hostname}/schema`);
+      response.status(200).contentType("application/json").send(json);
     }
   });
+};
 
-}).listen(port);
+app.get("/schema", (request, response) =>
+  serve(request, response, path.join(process.cwd(), "schema.json"))
+);
 
-console.log(`Server running at http://127.0.0.1:${port}`);
+app.get("*", (request, response) => {
+  serve(request, response, path.join(process.cwd(), request.url));
+});
+
+app.listen(PORT, () =>
+  console.log(`JSON Schema Server running at 127.0.0.1:${PORT}`)
+);
