@@ -1,0 +1,28 @@
+{
+  "description": "Change the way the flow executes",
+  "label": "Condition",
+  "category": "Flow",
+  "icon": "ConditionIcon",
+  "yields": "ONE",
+  "branches": {
+    "min": 1,
+    "max": 1,
+    "filterOption": {
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["BOOLEAN"],
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "value",
+      "label": "Value",
+      "info": "If this value is evaluated truthy the child steps will be executed."
+    },
+    "values": [
+      {
+        "label": "Branch 1"
+      }
+    ]
+  }
+}
