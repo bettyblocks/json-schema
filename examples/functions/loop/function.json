@@ -9,6 +9,9 @@
         "type": "Collection",
         "validations": {
           "required": true
+        },
+        "additional": {
+          "model": ["name"]
         }
       },
       "name": "through",
