@@ -3,7 +3,7 @@
   "label": "Condition",
   "category": "Flow",
   "icon": "ConditionIcon",
-  "yields": "ONE",
+  "yields": "BRANCHES",
   "branches": {
     "min": 1,
     "max": 1,
