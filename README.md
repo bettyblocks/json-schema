@@ -1,5 +1,7 @@
 # json-schema
 
+test-b1
+
 The JSON schemas for CLI related entities.
 
 ## Host schema locally
