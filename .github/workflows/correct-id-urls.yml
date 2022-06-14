@@ -3,8 +3,6 @@ name: Correct $id URLs
 on:
   push:
     branches: ["master", "acceptance", "edge"]
-  pull_request:
-    branches: ["master", "acceptance", "edge"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
