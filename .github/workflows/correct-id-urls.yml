@@ -1,0 +1,34 @@
+name: Correct $id URLs
+
+on:
+  push:
+    branches: ["master", "acceptance", "edge"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  correct-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Enforce the right branch in $id URLs
+        run: |
+          git config --global user.name 'BB JSON Schema'
+          git config --global user.email 'bb-json-schema@noreply.github.com'
+
+          if [[ -z "${GITHUB_BASE_REF}" ]]; then
+            BRANCH=$GITHUB_REF_NAME
+          else
+            BRANCH=$GITHUB_BASE_REF
+          fi
+
+          for file in $(find schemas -name '*.json'); do
+            sed -i -r 's#(/bettyblocks/json-schema/)(.+)/schemas/#\1'"$BRANCH"'/schemas/#' $file
+            git add $file
+          done
+
+          if [[ $(git status -s | wc -l) -ne 0 ]]; then 
+            git commit -m "Enforce $BRANCH in \$id URLs"
+            git push
+          fi
