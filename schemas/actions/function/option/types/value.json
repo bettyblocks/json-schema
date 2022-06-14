@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/feat/enforce-branch-based-id-urls-ACTIONS-771/schemas/actions/function/option/types/value.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/test/b/schemas/actions/function/option/types/value.json",
   "title": "Options Type Value",
   "description": "Properties specific to the Value option type.",
   "type": "object",
@@ -22,7 +22,7 @@
       "type": "object",
       "properties": {
         "required": {
-          "$ref": "/bettyblocks/json-schema/feat/enforce-branch-based-id-urls-ACTIONS-771/schemas/actions/function/option/validation.json#/definitions/required"
+          "$ref": "/bettyblocks/json-schema/test/b/schemas/actions/function/option/validation.json#/definitions/required"
         }
       }
     }
