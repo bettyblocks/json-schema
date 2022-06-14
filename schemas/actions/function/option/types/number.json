@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/test/a/schemas/actions/function/option/types/number.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/test/c/schemas/actions/function/option/types/number.json",
   "title": "Options Type Number",
   "description": "Properties specific to the Number option type.",
   "type": "object",
@@ -14,13 +14,13 @@
       "type": "object",
       "properties": {
         "required": {
-          "$ref": "/bettyblocks/json-schema/test/a/schemas/actions/function/option/validation.json#/definitions/required"
+          "$ref": "/bettyblocks/json-schema/test/c/schemas/actions/function/option/validation.json#/definitions/required"
         },
         "min": {
-          "$ref": "/bettyblocks/json-schema/test/a/schemas/actions/function/option/validation.json#/definitions/min"
+          "$ref": "/bettyblocks/json-schema/test/c/schemas/actions/function/option/validation.json#/definitions/min"
         },
         "max": {
-          "$ref": "/bettyblocks/json-schema/test/a/schemas/actions/function/option/validation.json#/definitions/max"
+          "$ref": "/bettyblocks/json-schema/test/c/schemas/actions/function/option/validation.json#/definitions/max"
         }
       }
     }
