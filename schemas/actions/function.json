@@ -51,7 +51,7 @@
   "anyOf": [
     {
       "properties": {
-        "yields": { "const": " BRANCHES" }
+        "yields": { "const": "BRANCHES" }
       },
       "required": ["branches"]
     },
