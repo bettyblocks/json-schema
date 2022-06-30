@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/branches.json",
-  "title": "Branches",
-  "description": "Branches that can be configured for a ActionStep. All the available types of options are found in the definitions.",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/paths.json",
+  "title": "Paths",
+  "description": "Paths that can be configured for a ActionStep. All the available types of options are found in the definitions.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
