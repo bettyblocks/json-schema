@@ -41,7 +41,7 @@
     "paths": {
       "description": "The paths that you want configured for the action step.",
       "type": "object",
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/paths.json"
+      "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/paths.json"
     },
     "yields": {
       "description": "Determines wether the function can have other functions nested and if so, what the behaviour should be for executing those functions",
