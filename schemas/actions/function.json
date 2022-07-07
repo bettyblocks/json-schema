@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function.json",
   "title": "Function",
   "description": "A function to be used in the IDE",
   "type": "object",
@@ -35,13 +35,13 @@
       "description": "The options that you want configured for the action. These can be referred by name inside the function",
       "type": "array",
       "items": {
-        "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option.json"
+        "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option.json"
       }
     },
     "paths": {
       "description": "The paths that you want configured for the action step.",
       "type": "object",
-      "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/paths.json"
+      "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/paths.json"
     },
     "yields": {
       "description": "Determines wether the function can have other functions nested and if so, what the behaviour should be for executing those functions",
