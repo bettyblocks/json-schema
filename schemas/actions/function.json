@@ -45,7 +45,7 @@
     },
     "yields": {
       "description": "Determines wether the function can have other functions nested and if so, what the behaviour should be for executing those functions",
-      "enum": ["NONE", "PAHS", "ALL"]
+      "enum": ["NONE", "PATHS", "ALL"]
     }
   },
   "anyOf": [
