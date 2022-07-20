@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/property.json",
+  "title": "Options Type Property",
+  "description": "Properties specific to the Property option type.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "Property"
+    },
+    "model": {
+      "description": "The model on which the properties are based. Should refer to another option name which is model based.",
+      "type": "string"
+    },
+    "validations": {
+      "description": "The requirements for the given option.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/validation.json#/definitions/required"
+        }
+      }
+    }
+  },
+  "required": ["model"]
+}

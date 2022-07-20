@@ -1,0 +1,65 @@
+{
+  "description": "Stores a file in the asset store",
+  "label": "Store file",
+  "category": "MISC",
+  "icon": "UploadIcon",
+  "options": [
+    {
+      "meta": {
+        "type": "Model",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "model",
+      "label": "Model",
+      "info": "The model you want to upload the file for"
+    },
+    {
+      "meta": {
+        "type": "Property",
+        "model": "model",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "property",
+      "label": "Property",
+      "info": "The property you want to upload the file for",
+      "configuration": {
+        "dependsOn": [
+          {
+            "option": "model",
+            "action": "CLEAR"
+          }
+        ]
+      }
+    },
+    {
+      "meta": {
+        "type": "Text",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "url",
+      "label": "URL",
+      "info": "The URL of the file you want to upload"
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        },
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "reference",
+      "label": "As",
+      "info": "The name of the variable you want for the file reference"
+    }
+  ],
+  "yields": "NONE"
+}
