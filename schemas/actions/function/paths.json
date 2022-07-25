@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/edge/schemas/actions/function/paths.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/paths.json",
   "title": "Paths",
   "description": "Paths that can be configured for a ActionStep. All the available types of options are found in the definitions.",
   "type": "object",
@@ -22,7 +22,7 @@
           },
           "oneOf": [
             {
-              "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/value.json"
+              "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/value.json"
             }
           ],
           "required": ["type"]
