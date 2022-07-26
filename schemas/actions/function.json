@@ -28,8 +28,8 @@
         "FinishFlagIcon",
         "LightningIcon",
         "LoopIcon",
-        "SftpUploadIcon",
-        "UpdateIcon"
+        "UpdateIcon",
+        "UploadIcon"
       ]
     },
     "options": {
