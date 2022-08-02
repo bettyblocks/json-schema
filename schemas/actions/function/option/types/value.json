@@ -14,7 +14,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "enum": ["BOOLEAN", "JSON", "NUMBER", "OBJECT", "RECORD", "STRING"]
+        "enum": ["BOOLEAN", "INTEGER", "JSON", "OBJECT", "RECORD", "STRING"]
       }
     },
     "validations": {
