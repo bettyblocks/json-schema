@@ -20,6 +20,7 @@
             "Number",
             "Object",
             "Output",
+            "Property",
             "PropertyMap",
             "Record",
             "Select",
@@ -60,7 +61,10 @@
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/output.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/property-map.json"
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/property.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/property-map.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/record.json"
