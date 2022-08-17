@@ -6,6 +6,11 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "expression": {
+      "description": "Indicates if the function is an expression or normal function",
+      "type": "boolean",
+      "default": false
+    },
     "label": {
       "description": "The label for the function, as shown in the IDE",
       "type": "string"
