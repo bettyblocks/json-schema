@@ -23,22 +23,28 @@
       "type": "string"
     },
     "icon": {
-      "__comment": "The list of available values is defined by a set we have available in our framework.",
+      "__comment": "The available icons are defined by a set we have available in our framework.",
       "description": "The icon to be displayed in the IDE for this function.",
-      "enum": [
-        "AuthenticateIcon",
-        "ConditionIcon",
-        "CreateIcon",
-        "DeleteIcon",
-        "EmailIcon",
-        "FinishFlagIcon",
-        "HttpRequestIcon",
-        "LightningIcon",
-        "LogsIcon",
-        "LoopIcon",
-        "UpdateIcon",
-        "UploadIcon"
-      ]
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "color": {
+          "enum": [
+            "Yellow",
+            "Green",
+            "Pink",
+            "Orange",
+            "Purple",
+            "Blue",
+            "Teal",
+            "Grey"
+          ]
+        }
+      },
+      "required": ["name", "color"]
     },
     "options": {
       "description": "The options that you want configured for the action. These can be referred by name inside the function",
