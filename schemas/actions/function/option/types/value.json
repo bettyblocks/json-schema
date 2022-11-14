@@ -22,7 +22,8 @@
           "NUMBER",
           "OBJECT",
           "RECORD",
-          "STRING"
+          "STRING",
+          "ARRAY"
         ]
       }
     },
