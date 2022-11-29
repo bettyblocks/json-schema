@@ -2,7 +2,10 @@
   "description": "Generate a token for the user.",
   "label": "Authenticate User",
   "category": "AUTH",
-  "icon": "AuthenticateIcon",
+  "icon": {
+    "name": "AuthenticateIcon",
+    "color": "Teal"
+  },
   "yields": "NONE",
   "options": [
     {

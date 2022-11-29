@@ -2,7 +2,10 @@
   "description": "Create a record for a selected model",
   "label": "Create Record",
   "category": "CRUD",
-  "icon": "CreateIcon",
+  "icon": {
+    "name": "PlusIcon",
+    "color": "Green"
+  },
   "options": [
     {
       "meta": {

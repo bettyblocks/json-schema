@@ -2,7 +2,10 @@
   "description": "Change the way the flow executes",
   "label": "Condition",
   "category": "Flow",
-  "icon": "ConditionIcon",
+  "icon": {
+    "name": "ConditionIcon",
+    "color": "Yellow"
+  },
   "yields": "PATHS",
   "paths": {
     "min": 1,
