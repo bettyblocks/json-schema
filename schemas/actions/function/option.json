@@ -31,10 +31,10 @@
       },
       "oneOf": [
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/action.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/action.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/authentication-profile.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/authentication-profile.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/boolean.json"
@@ -43,10 +43,10 @@
           "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/collection.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/input-variable-map.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/input-variable-map.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/json.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/json.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/map.json"
