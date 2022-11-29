@@ -10,7 +10,7 @@
       "const": "InputVariableMap"
     },
     "action": {
-      "description": "The action on which the input variables are based. Should refer to another option name which is action based.",
+      "description": "The action on which the input variables are based. Should refer to another option name which is of type Action.",
       "type": "string"
     },
     "validations": {
