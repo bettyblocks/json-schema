@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/action.json",
+  "title": "Options Type Action",
+  "description": "Properties specific to the Action option type.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "Action"
+    },
+    "validations": {
+      "description": "The requirements for the given option.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/validation.json#/definitions/required"
+        }
+      }
+    }
+  }
+}

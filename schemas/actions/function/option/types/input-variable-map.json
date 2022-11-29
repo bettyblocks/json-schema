@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/input-variable-map.json",
+  "title": "Options Type InputVariableMap",
+  "description": "Properties specific to the InputVariableMap option type.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "InputVariableMap"
+    },
+    "action": {
+      "description": "The action on which the input variables are based. Should refer to another option name which is action based.",
+      "type": "string"
+    },
+    "validations": {
+      "description": "The requirements for the given option.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/validation.json#/definitions/required"
+        }
+      }
+    }
+  },
+  "required": ["action"]
+}
