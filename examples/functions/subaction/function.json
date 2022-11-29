@@ -1,0 +1,40 @@
+{
+  "description": "Execute a Subaction",
+  "label": "Subaction",
+  "category": "CRUD",
+  "icon": {
+    "name": "ActionIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Action",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "action",
+      "label": "Action",
+      "info": "The action you want to execute."
+    },
+    {
+      "meta": {
+        "type": "InputVariableMap",
+        "action": "action"
+      },
+      "name": "inputMapping",
+      "label": "Input Variable Mapping",
+      "info": "Mapping of values to input variables for the action. The input variables are based on the selected action.",
+      "configuration": {
+        "dependsOn": [
+          {
+            "option": "action",
+            "action": "CLEAR"
+          }
+        ]
+      }
+    }
+  ],
+  "yields": "NONE"
+}
