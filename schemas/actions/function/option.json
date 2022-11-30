@@ -34,10 +34,10 @@
 <<<<<<< HEAD
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/authentication-profile.json"
 =======
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/action.json"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/action.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/authentication-profile.json"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/authentication-profile.json"
 >>>>>>> acceptance
         },
         {
@@ -50,10 +50,10 @@
 <<<<<<< HEAD
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/json.json"
 =======
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/input-variable-map.json"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/input-variable-map.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/json.json"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/json.json"
 >>>>>>> acceptance
         },
         {
