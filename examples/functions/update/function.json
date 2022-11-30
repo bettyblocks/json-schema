@@ -2,7 +2,10 @@
   "description": "Update a record",
   "label": "Update Record",
   "category": "CRUD",
-  "icon": "UpdateIcon",
+  "icon": {
+    "name": "UpdateIcon",
+    "color": "Green"
+  },
   "options": [
     {
       "meta": {
