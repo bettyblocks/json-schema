@@ -46,7 +46,7 @@
           "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/input-variable-map.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/json.json"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/json.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/map.json"
