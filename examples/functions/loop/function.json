@@ -2,7 +2,10 @@
   "description": "Loop over a list of items. In each iteration, the item as well as the index are available. Outputs the total count of items iterated.",
   "label": "Loop",
   "category": "CONTROL",
-  "icon": "LoopIcon",
+  "icon": {
+    "name":"LoopIcon",
+    "color": "Blue"
+  },
   "options": [
     {
       "meta": {
