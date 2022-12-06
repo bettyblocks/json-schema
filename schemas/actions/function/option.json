@@ -10,9 +10,11 @@
       "properties": {
         "type": {
           "enum": [
+            "Action",
             "AuthenticationProfile",
             "Boolean",
             "Collection",
+            "InputVariableMap",
             "JSON",
             "Map",
             "Model",
