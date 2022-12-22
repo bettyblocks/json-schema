@@ -9,6 +9,10 @@
     "type": {
       "const": "Number"
     },
+    "default": {
+      "description": "The default value of the option",
+      "type": "integer"
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
