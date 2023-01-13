@@ -10,7 +10,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "enum": ["Boolean", "JSON", "Number", "Object", "Text"]
+          "enum": ["Boolean", "JSON", "Number", "Object", "Text", "Inherit"]
         }
       }
     },
