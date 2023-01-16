@@ -10,9 +10,21 @@
       "type": "object",
       "properties": {
         "type": {
-          "enum": ["Boolean", "JSON", "Number", "Object", "Text", "Inherit"]
+          "enum": ["Boolean", "JSON", "Number", "Object", "Text"]
         }
       }
+    },
+    "inherit": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "Inherit"
+        },
+        "action": {
+          "type": "string"
+        }
+      },
+      "required": ["action"]
     },
     "record": {
       "type": "object",
@@ -50,6 +62,7 @@
       "anyOf": [
         { "$ref": "#/definitions/base" },
         { "$ref": "#/definitions/collection" },
+        { "$ref": "#/definitions/inherit" },
         { "$ref": "#/definitions/record" }
       ]
     },
