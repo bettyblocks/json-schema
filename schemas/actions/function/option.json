@@ -46,10 +46,10 @@
           "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/collection.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/filter.json"
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/filter.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/input-variable-map.json"
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/input-variable-map.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/json.json"
