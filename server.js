@@ -4,7 +4,7 @@ const path = require("path");
 
 const SCHEMA = "http://json-schema.org/draft-07/schema";
 const HOST = "https://raw.githubusercontent.com";
-const PREFIX = "bettyblocks/json-schema/master/";
+const PREFIX = /bettyblocks\/json-schema\/\w+\//g;
 const PORT = 9797;
 
 const app = express();
@@ -25,7 +25,7 @@ const serve = (request, response, file) => {
       const json = content
         .toString()
         .replaceAll(HOST, hostname)
-        .replaceAll(PREFIX, "")
+        .replace(PREFIX, "")
         .replaceAll(SCHEMA, `${hostname}/schema`);
       response.status(200).contentType("application/json").send(json);
     }
