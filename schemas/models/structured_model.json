@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/models/structured_model.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/models/structured_model.json",
   "title": "Question",
   "description": "An object representing a single question in a questionnaire, including the prompt to be displayed to the user and any necessary data to properly evaluate their response.",
   "type": "object",
