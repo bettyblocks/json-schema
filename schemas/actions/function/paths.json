@@ -14,15 +14,21 @@
     },
     "filterOption": {
       "properties": {
+        "name": {
+          "const": "value"
+        },
         "meta": {
           "properties": {
             "type": {
-              "enum": ["Value"]
+              "enum": ["Value", "Filter"]
             }
           },
           "oneOf": [
             {
               "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/value.json"
+            },
+            {
+              "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/filter.json"
             }
           ],
           "required": ["type"]
