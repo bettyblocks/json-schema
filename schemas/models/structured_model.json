@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/models/structured_model.json",
+  "title": "Question",
+  "description": "A question in a questionnaire to be asked to a user",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "score": {
+      "description": "The numerical score assigned to the question",
+      "type": "integer",
+      "default": 0
+    },
+    "answer": {
+      "description": "The written response provided by the user to the question",
+      "type": "string"
+    },
+    "uuid": {
+      "description": "A unique identifier for the question, used to distinguish it from other questions",
+      "type": "string"
+    },
+    "type": {
+      "description": "The classification of the question, such as multiple choice or open-ended",
+      "type": "string"
+    },
+    "id": {
+      "description": "A distinct identifier for the question, used to track it within the questionnaire",
+      "type": "string"
+    },
+    "title": {
+      "description": "The main heading for the text that forms the question being asked in the questionnaire",
+      "type": "string"
+    },
+    "body": {
+    "description": "The full text of the question to be asked to the user",
+    "type": "string"
+    }
+  }
+}
