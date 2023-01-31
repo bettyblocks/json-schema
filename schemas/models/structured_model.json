@@ -2,34 +2,56 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/edge/schemas/models/structured_model.json",
   "title": "Question",
-  "description": "An object representing a single question in a questionnaire, including the prompt to be displayed to the user and any necessary data to properly evaluate their response.",
-  "type": "object",
+  "description": "A Json Schema to validate client Json Schema in regards to the object property",
   "additionalProperties": false,
+  "type": "object",
   "properties": {
-    "score": {
-      "description": "The numerical score assigned to the question",
-      "type": "integer",
-      "default": 0
+    "properties": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            }
+          }
+        },
+        "answer": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            }
+          }
+        },
+        "uuid": {
+          "type": "object",
+          "properties": {
+            "format": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
     },
-    "answer": {
-      "description": "The written response provided by the user to the question",
+    "additionalProperties": {
+      "type": "boolean"
+    },
+    "$id": {
       "type": "string"
     },
-    "uuid": {
-      "description": "A unique identifier for the question, used to distinguish it from other questions",
+    "$schema": {
       "type": "string"
     },
     "type": {
-      "description": "The classification of the question, such as multiple choice or open-ended",
       "type": "string"
     },
     "title": {
-      "description": "The main heading for the text that forms the question being asked in the questionnaire",
       "type": "string"
-    },
-    "body": {
-    "description": "The full text of the question to be asked to the user",
-    "type": "string"
     }
   }
 }
