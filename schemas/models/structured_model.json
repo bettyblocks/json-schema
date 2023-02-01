@@ -5,38 +5,12 @@
   "description": "A Json Schema to validate client Json Schema in regards to the object property",
   "additionalProperties": false,
   "type": "object",
+  "required": [
+    "title"
+  ],
   "properties": {
     "properties": {
-      "type": "object",
-      "properties": {
-        "score": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            }
-          }
-        },
-        "answer": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            }
-          }
-        },
-        "uuid": {
-          "type": "object",
-          "properties": {
-            "format": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            }
-          }
-        }
-      }
+      "$ref": "#/$defs/properties"
     },
     "additionalProperties": {
       "type": "boolean"
@@ -52,6 +26,39 @@
     },
     "title": {
       "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "properties": {
+      "type": "object",
+      "required": [
+        "uuid"
+      ],
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "string",
+              "boolean",
+              "number",
+              "integer",
+              "none"
+            ]
+          },
+          "format": {
+            "type": "string"
+          },
+          "uuid": {
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }
