@@ -35,16 +35,10 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "score": {
-            "type": "integer"
-          },
           "type": {
-            "type": ["string", "boolean", "number"]
+            "type": "string", "enum": ["string", "boolean", "number", "integer", "none"]
           },
           "format": {
-            "type": "string"
-          },
-          "answer": {
             "type": "string"
           }
         }
