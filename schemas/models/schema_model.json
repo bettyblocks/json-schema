@@ -5,9 +5,7 @@
   "description": "A Json Schema to validate client Json Schema in regards to the object property",
   "additionalProperties": false,
   "type": "object",
-  "required": [
-    "title"
-  ],
+  "required": ["title"],
   "properties": {
     "properties": {
       "$ref": "#/$defs/properties"
@@ -34,22 +32,14 @@
   "$defs": {
     "properties": {
       "type": "object",
-      "required": [
-        "uuid"
-      ],
+      "required": ["uuid"],
       "additionalProperties": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "type": {
             "type": "string",
-            "enum": [
-              "string",
-              "boolean",
-              "number",
-              "integer",
-              "none"
-            ]
+            "enum": ["string", "boolean", "number", "integer", "none"]
           },
           "format": {
             "type": "string"
