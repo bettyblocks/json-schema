@@ -1,6 +1,7 @@
 # JSON schema
 
 The JSON schemas for the CLI related entities and the schema model.
+
 ## Host schema locally
 
 To host this schema locally, have Node (v14.2.0) installed and run `npm start` from the root of this project.
