@@ -1,6 +1,6 @@
 # JSON schema
 
-The JSON schemas for the CLI related entities and the schema model.
+The JSON schemas for CLI related entities.
 
 ## Host schema locally
 
