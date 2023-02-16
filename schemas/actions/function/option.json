@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/option.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/edge/schemas/actions/function/option.json",
   "title": "Options",
   "description": "Options that can be configured for each Function. All the available types of options are found in the definitions.",
   "type": "object",
@@ -33,58 +33,58 @@
       },
       "oneOf": [
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/action.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/action.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/authentication-profile.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/authentication-profile.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/boolean.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/boolean.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/collection.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/collection.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/input-variable-map.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/input-variable-map.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/json.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/json.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/map.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/map.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/model.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/model.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/multiline-text.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/multiline-text.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/number.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/number.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/object.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/object.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/output.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/output.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/property.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/property.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/property-map.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/property-map.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/record.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/record.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/select.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/select.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/text.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/text.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/value.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/value.json"
         }
       ],
       "required": ["type"]
@@ -108,7 +108,7 @@
     },
     "configuration": {
       "type": "object",
-      "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/configuration.json"
+      "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/configuration.json"
     }
   },
   "required": ["meta", "name", "label"]
