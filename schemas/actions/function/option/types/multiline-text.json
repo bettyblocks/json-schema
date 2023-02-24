@@ -9,6 +9,9 @@
     "type": {
       "const": "MultilineText"
     },
+    "syntaxHighlighting": {
+      "enum": ["javascript", "html"]
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
