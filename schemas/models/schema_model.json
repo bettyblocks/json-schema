@@ -37,7 +37,7 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["string", "boolean", "number", "integer", "uuid"]
+            "enum": ["string", "boolean", "number", "integer"]
           },
           "format": {
             "type": "string"
