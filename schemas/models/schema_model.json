@@ -29,6 +29,7 @@
       "type": "string"
     }
   },
+  "required": ["properties"],
   "$defs": {
     "properties": {
       "type": "object",
@@ -44,8 +45,8 @@
           "format": {
             "type": "string"
           },
-          "uuid": {
-            "type": "string"
+          "indexed": {
+            "type": "boolean"
           }
         }
       }
