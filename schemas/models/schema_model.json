@@ -28,6 +28,7 @@
       "type": "string"
     }
   },
+  "required": ["properties"],
   "$defs": {
     "properties": {
       "type": "object",
