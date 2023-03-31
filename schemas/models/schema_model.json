@@ -36,6 +36,9 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
+          "description": {
+            "type": "string"
+          },          
           "type": {
             "type": "string",
             "enum": ["string", "boolean", "number", "integer"]
