@@ -18,7 +18,21 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "enum": ["BOOLEAN", "FILE", "IMAGE", "NUMBER", "TEXT"]
+        "enum": [
+          "BOOLEAN",
+          "DATE_TIME",
+          "DATE",
+          "DECIMAL",
+          "FILE",
+          "IMAGE",
+          "INTEGER",
+          "LIST",
+          "OBJECT",
+          "PRICE",
+          "SERIAL",
+          "STRING",
+          "TEXT"
+        ]
       }
     },
     "validations": {
