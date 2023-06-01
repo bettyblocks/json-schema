@@ -12,6 +12,10 @@
     "values": {
       "description": "The options that you want configured for the select.",
       "type": "array",
+      "default": {
+        "description": "The default value of the option",
+        "type": "string"
+      },
       "items": {
         "type": "object",
         "properties": {
