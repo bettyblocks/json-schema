@@ -9,6 +9,10 @@
     "type": {
       "const": "Select"
     },
+    "default": {
+      "description": "The default value of the option",
+      "type": "string"
+    },
     "values": {
       "description": "The options that you want configured for the select.",
       "type": "array",
