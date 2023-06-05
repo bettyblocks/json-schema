@@ -49,6 +49,18 @@
         }
       },
       "required": ["model"]
+    },
+    "array": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "Array"
+        },
+        "dataType": {
+          "enum": ["INTEGER", "STRING"]
+        }
+      },
+      "required": ["dataType"]
     }
   },
   "properties": {
@@ -63,7 +75,8 @@
         { "$ref": "#/definitions/base" },
         { "$ref": "#/definitions/collection" },
         { "$ref": "#/definitions/inherit" },
-        { "$ref": "#/definitions/record" }
+        { "$ref": "#/definitions/record" },
+        { "$ref": "#/definitions/array" }
       ]
     },
     "validations": {
