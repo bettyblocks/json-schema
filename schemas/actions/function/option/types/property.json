@@ -23,6 +23,7 @@
           "DATE_TIME",
           "DATE",
           "DECIMAL",
+          "EMAIL_ADDRESS",
           "FILE",
           "IMAGE",
           "INTEGER",
@@ -31,7 +32,8 @@
           "PRICE",
           "SERIAL",
           "STRING",
-          "TEXT"
+          "TEXT",
+          "URL"
         ]
       }
     },
