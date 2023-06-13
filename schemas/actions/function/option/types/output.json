@@ -59,7 +59,7 @@
         "dataType": {
           "enum": ["INTEGER", "STRING", "SCHEMA"]
         },
-        "model": {
+        "schemaModel": {
           "type": "string"
         }
       },
@@ -68,12 +68,12 @@
           "properties": {
             "dataType": { "const": "SCHEMA" }
           },
-          "required": ["model"]
+          "required": ["schemaModel"]
         },
         {
           "properties": {
             "dataType": { "enum": ["INTEGER", "STRING"] },
-            "model": false
+            "schemaModel": false
           }
         }
       ],
