@@ -9,6 +9,14 @@
     "type": {
       "const": "Model"
     },
+    "allowedKinds": {
+      "description": "The model kinds that are allowed for the given option.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["DATA", "SCHEMA", "REMOTE"]
+      }
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
