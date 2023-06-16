@@ -82,10 +82,10 @@
           "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/select.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/schema-model.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/schema-model.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/text.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/text.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/value.json"
