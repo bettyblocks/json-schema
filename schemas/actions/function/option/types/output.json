@@ -57,9 +57,26 @@
           "const": "Array"
         },
         "dataType": {
-          "enum": ["INTEGER", "STRING"]
+          "enum": ["INTEGER", "STRING", "SCHEMA"]
+        },
+        "schemaModel": {
+          "type": "string"
         }
       },
+      "anyOf": [
+        {
+          "properties": {
+            "dataType": { "const": "SCHEMA" }
+          },
+          "required": ["schemaModel"]
+        },
+        {
+          "properties": {
+            "dataType": { "enum": ["INTEGER", "STRING"] },
+            "schemaModel": false
+          }
+        }
+      ],
       "required": ["dataType"]
     }
   },

@@ -26,6 +26,7 @@
             "PropertyMap",
             "Record",
             "Select",
+            "SchemaModel",
             "Text",
             "Value"
           ]
@@ -81,7 +82,10 @@
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/select.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/text.json"
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/schema-model.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/text.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/value.json"
