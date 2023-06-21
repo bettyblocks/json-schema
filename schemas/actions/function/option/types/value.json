@@ -19,7 +19,7 @@
           "FILE",
           "IMAGE",
           "JSON",
-          "NUMBER",
+          "INTEGER",
           "OBJECT",
           "RECORD",
           "STRING",
