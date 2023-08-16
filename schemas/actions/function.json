@@ -46,6 +46,10 @@
       },
       "required": ["name", "color"]
     },
+    "context": {
+      "description": "Determines the context in which the function is utilized, thereby offering context-specific options.",
+      "enum": ["gqlBuffer"]
+    },
     "options": {
       "description": "The options that you want configured for the action. These can be referred by name inside the function",
       "type": "array",
@@ -59,7 +63,7 @@
       "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/paths.json"
     },
     "yields": {
-      "description": "Determines wether the function can have other functions nested and if so, what the behaviour should be for executing those functions",
+      "description": "Determines whether the function can have other functions nested and if so, what the behaviour should be for executing those functions",
       "enum": ["NONE", "PATHS", "ALL"]
     }
   },
