@@ -48,7 +48,11 @@
     },
     "context": {
       "description": "Determines the context in which the function is utilized, thereby offering context-specific options.",
-      "enum": ["gqlBuffer"]
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["gqlBuffer"]
+      }
     },
     "options": {
       "description": "The options that you want configured for the action. These can be referred by name inside the function",
