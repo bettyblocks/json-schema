@@ -26,8 +26,12 @@
         "toSingleItem": {
           "type": "boolean",
           "default": false
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
+      "additionalProperties": false,
       "required": ["source"]
     },
     "record": {
@@ -38,8 +42,12 @@
         },
         "model": {
           "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
+      "additionalProperties": false,
       "required": ["model"]
     },
     "collection": {
@@ -50,8 +58,12 @@
         },
         "model": {
           "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
+      "additionalProperties": false,
       "required": ["model"]
     },
     "object": {
@@ -62,8 +74,12 @@
         },
         "schemaModel": {
           "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "array": {
       "type": "object",
@@ -76,6 +92,9 @@
         },
         "schemaModel": {
           "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
       "anyOf": [
@@ -92,6 +111,7 @@
           }
         }
       ],
+      "additionalProperties": false,
       "required": ["dataType"]
     }
   },
