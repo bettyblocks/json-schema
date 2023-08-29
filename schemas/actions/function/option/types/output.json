@@ -10,7 +10,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "enum": ["Boolean", "JSON", "Number", "Object", "Text"]
+          "enum": ["Boolean", "JSON", "Number", "Text"]
         }
       }
     },
@@ -20,11 +20,15 @@
         "type": {
           "const": "Inherit"
         },
-        "action": {
+        "source": {
           "type": "string"
+        },
+        "toSingleItem": {
+          "type": "boolean",
+          "default": false
         }
       },
-      "required": ["action"]
+      "required": ["source"]
     },
     "record": {
       "type": "object",
@@ -49,6 +53,17 @@
         }
       },
       "required": ["model"]
+    },
+    "object": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "Object"
+        },
+        "schemaModel": {
+          "type": "string"
+        }
+      }
     },
     "array": {
       "type": "object",
@@ -93,6 +108,7 @@
         { "$ref": "#/definitions/collection" },
         { "$ref": "#/definitions/inherit" },
         { "$ref": "#/definitions/record" },
+        { "$ref": "#/definitions/object" },
         { "$ref": "#/definitions/array" }
       ]
     },
