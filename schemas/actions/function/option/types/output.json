@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/output.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/output.json",
   "title": "Options Type Output",
   "description": "Properties specific to the Output option type.",
   "type": "object",
@@ -10,7 +10,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "enum": ["Boolean", "JSON", "Number", "Object", "Text"]
+          "enum": ["Boolean", "JSON", "Number", "Text"]
         }
       }
     },
@@ -20,11 +20,19 @@
         "type": {
           "const": "Inherit"
         },
-        "action": {
+        "source": {
           "type": "string"
+        },
+        "toSingleItem": {
+          "type": "boolean",
+          "default": false
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
-      "required": ["action"]
+      "additionalProperties": false,
+      "required": ["source"]
     },
     "record": {
       "type": "object",
@@ -34,8 +42,12 @@
         },
         "model": {
           "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
+      "additionalProperties": false,
       "required": ["model"]
     },
     "collection": {
@@ -46,9 +58,28 @@
         },
         "model": {
           "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
+      "additionalProperties": false,
       "required": ["model"]
+    },
+    "object": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "Object"
+        },
+        "schemaModel": {
+          "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
     },
     "array": {
       "type": "object",
@@ -61,6 +92,9 @@
         },
         "schemaModel": {
           "type": "string"
+        },
+        "scoped": {
+          "type": "boolean"
         }
       },
       "anyOf": [
@@ -77,6 +111,7 @@
           }
         }
       ],
+      "additionalProperties": false,
       "required": ["dataType"]
     }
   },
@@ -93,6 +128,7 @@
         { "$ref": "#/definitions/collection" },
         { "$ref": "#/definitions/inherit" },
         { "$ref": "#/definitions/record" },
+        { "$ref": "#/definitions/object" },
         { "$ref": "#/definitions/array" }
       ]
     },
@@ -101,7 +137,7 @@
       "type": "object",
       "properties": {
         "required": {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#/definitions/required"
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/validation.json#/definitions/required"
         }
       }
     }
