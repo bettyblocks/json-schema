@@ -20,7 +20,7 @@
         "meta": {
           "properties": {
             "type": {
-              "enum": ["Value", "Filter"]
+              "enum": ["Value", "Filter", "MultilineText"]
             }
           },
           "oneOf": [
@@ -29,6 +29,9 @@
             },
             {
               "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/filter.json"
+            },
+            {
+              "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/multiline-text.json"
             }
           ],
           "required": ["type"]
