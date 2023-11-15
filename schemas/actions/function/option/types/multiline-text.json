@@ -9,8 +9,13 @@
     "type": {
       "const": "MultilineText"
     },
-    "syntaxHighlighting": {
-      "enum": ["javascript", "html"]
+    "default": {
+      "description": "The default value of the option",
+      "type": "string"
+    },
+    "placeholder": {
+      "description": "The placeholder value of the option",
+      "type": "string"
     },
     "validations": {
       "description": "The requirements for the given option.",
