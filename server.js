@@ -21,8 +21,12 @@ const serve = (request, response, file) => {
         response.status(500).send("Internal Error: " + error.code + " ..\n");
       }
     } else {
-      const hostname = `${request.protocol}://${request.headers.host}`;
-      console.log({ protocol: request.protocol, host: request.headers.host });
+      const protocol = request.headers.host.includes("localhost")
+        ? request.protocol
+        : "https";
+
+      const hostname = `${protocol}://${request.headers.host}`;
+      console.log({ protocol: protocol, host: request.headers.host });
       const json = content
         .toString()
         .replaceAll(HOST, hostname)
