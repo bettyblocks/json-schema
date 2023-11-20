@@ -22,6 +22,7 @@ const serve = (request, response, file) => {
       }
     } else {
       const hostname = `${request.protocol}://${request.headers.host}`;
+      console.log({ protocol: request.protocol, host: request.headers.host });
       const json = content
         .toString()
         .replaceAll(HOST, hostname)
