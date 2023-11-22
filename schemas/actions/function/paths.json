@@ -28,10 +28,10 @@
               "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/value.json"
             },
             {
-              "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/filter.json"
+              "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/filter.json"
             },
             {
-              "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/multiline-text.json"
+              "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/multiline-text.json"
             }
           ],
           "required": ["type"]
