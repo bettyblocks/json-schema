@@ -75,10 +75,27 @@
         "schemaModel": {
           "type": "string"
         },
+        "dataType": {
+          "enum": ["INTEGER", "STRING", "SCHEMA"]
+        },
         "scoped": {
           "type": "boolean"
         }
       },
+      "anyOf": [
+        {
+          "properties": {
+            "dataType": { "const": "SCHEMA" }
+          },
+          "required": ["schemaModel"]
+        },
+        {
+          "properties": {
+            "dataType": { "enum": ["INTEGER", "STRING"] },
+            "schemaModel": false
+          }
+        }
+      ],
       "additionalProperties": false
     },
     "array": {
