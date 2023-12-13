@@ -128,7 +128,6 @@
             "anyOf": [
               { "$ref": "#/definitions/base" },
               { "$ref": "#/definitions/collection" },
-              { "$ref": "#/definitions/inherit" },
               { "$ref": "#/definitions/record" },
               { "$ref": "#/definitions/object" },
               { "$ref": "#/definitions/array" }
