@@ -12,6 +12,9 @@
       "properties": {
         "type": {
           "enum": ["Boolean", "JSON", "Number", "Text"]
+        },
+        "scoped": {
+          "type": "boolean"
         }
       }
     },
@@ -126,11 +129,21 @@
           "type": "array",
           "items": {
             "anyOf": [
-              { "$ref": "#/definitions/base" },
-              { "$ref": "#/definitions/collection" },
-              { "$ref": "#/definitions/record" },
-              { "$ref": "#/definitions/object" },
-              { "$ref": "#/definitions/array" }
+              {
+                "$ref": "#/definitions/base"
+              },
+              {
+                "$ref": "#/definitions/collection"
+              },
+              {
+                "$ref": "#/definitions/record"
+              },
+              {
+                "$ref": "#/definitions/object"
+              },
+              {
+                "$ref": "#/definitions/array"
+              }
             ]
           }
         }
