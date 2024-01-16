@@ -7,6 +7,7 @@
   "additionalProperties": false,
   "definitions": {
     "base": {
+      "additionalProperties": false,
       "type": "object",
       "properties": {
         "type": {
@@ -113,6 +114,27 @@
       ],
       "additionalProperties": false,
       "required": ["dataType"]
+    },
+    "anyOfType": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scoped": {
+          "type": "boolean"
+        },
+        "anyOf": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              { "$ref": "#/definitions/base" },
+              { "$ref": "#/definitions/collection" },
+              { "$ref": "#/definitions/record" },
+              { "$ref": "#/definitions/object" },
+              { "$ref": "#/definitions/array" }
+            ]
+          }
+        }
+      }
     }
   },
   "properties": {
@@ -129,7 +151,8 @@
         { "$ref": "#/definitions/inherit" },
         { "$ref": "#/definitions/record" },
         { "$ref": "#/definitions/object" },
-        { "$ref": "#/definitions/array" }
+        { "$ref": "#/definitions/array" },
+        { "$ref": "#/definitions/anyOfType" }
       ]
     },
     "validations": {
