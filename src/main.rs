@@ -1,16 +1,14 @@
 use axum::body::Body;
+use axum::extract::Request;
 use axum::http::uri::Scheme;
+use axum::http::{HeaderValue, StatusCode};
 use axum::response::{IntoResponse, Response};
-use axum::{
-    extract::Request,
-    handler::HandlerWithoutStateExt,
-    http::{HeaderValue, StatusCode},
-    routing::get,
-    Router,
-};
+use axum::routing::get;
+use axum::Router;
 use once_cell::sync::Lazy;
 use regex::Regex;
 use std::net::SocketAddr;
+use tokio::net::TcpListener;
 use tower::ServiceExt;
 use tower_http::services::fs::ServeFileSystemResponseBody;
 use tower_http::services::{ServeDir, ServeFile};
@@ -22,37 +20,46 @@ const FALLBACK_HOST_HEADER: HeaderValue = HeaderValue::from_static("example.com"
 static REGEX_JSON_SCHEMA: Lazy<Regex> =
     Lazy::new(|| Regex::new(r"bettyblocks/json-schema/\w+/").unwrap());
 
+enum SchemaOrDir {
+    Schema,
+    Dir,
+}
+
 #[tokio::main]
 async fn main() {
     let router = Router::new()
         .route(
             "/schema",
-            get(|request: Request| async {
-                let hostname = resolve_hostname(&request);
-                let service = ServeFile::new("schema.json");
-                let result = service.oneshot(request).await;
-                match result {
-                    Ok(response) => fetch_and_convert_file(response, &hostname).await,
-                    Err(e) => Err(e.to_string()),
-                }
-            }),
+            get(|request| fetch_file(request, SchemaOrDir::Schema)),
         )
-        .nest_service(
-            "/",
-            get(|request: Request| async {
-                let hostname = resolve_hostname(&request);
-                let service = ServeDir::new("");
-                let result = service.oneshot(request).await;
-                match result {
-                    Ok(response) => fetch_and_convert_file(response, &hostname).await,
-                    Err(e) => Err(e.to_string()),
-                }
-            }),
-        );
+        .nest_service("/", get(|request| fetch_file(request, SchemaOrDir::Dir)));
 
     let addr = SocketAddr::from(([0, 0, 0, 0], PORT));
-    let listener = tokio::net::TcpListener::bind(addr).await.unwrap();
+    let listener = TcpListener::bind(addr).await.unwrap();
     axum::serve(listener, router).await.unwrap();
+}
+
+async fn fetch_file(
+    request: Request,
+    schema_or_dir: SchemaOrDir,
+) -> Result<impl IntoResponse, String> {
+    let hostname = resolve_hostname(&request);
+
+    let result = match schema_or_dir {
+        SchemaOrDir::Schema => {
+            let service = ServeFile::new("schema.json");
+            service.oneshot(request).await
+        }
+        SchemaOrDir::Dir => {
+            let service = ServeDir::new("");
+            service.oneshot(request).await
+        }
+    };
+
+    match result {
+        Ok(response) => fetch_and_convert_file(response, &hostname).await,
+        Err(e) => Err(e.to_string()),
+    }
 }
 
 fn resolve_hostname(request: &Request) -> String {
