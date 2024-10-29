@@ -27,9 +27,19 @@ enum SchemaOrDir {
 
 #[tokio::main]
 async fn main() {
+    println!("Starting on port: {PORT}");
     let addr = SocketAddr::from(([0, 0, 0, 0], PORT));
     let listener = TcpListener::bind(addr).await.unwrap();
-    axum::serve(listener, router()).await.unwrap();
+    axum::serve(listener, router())
+        .with_graceful_shutdown(shutdown_signal())
+        .await
+        .unwrap();
+}
+
+async fn shutdown_signal() {
+    tokio::signal::ctrl_c()
+        .await
+        .expect("failed to install Ctrl+C handler");
 }
 
 fn router() -> Router {
