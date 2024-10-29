@@ -27,16 +27,18 @@ enum SchemaOrDir {
 
 #[tokio::main]
 async fn main() {
-    let router = Router::new()
+    let addr = SocketAddr::from(([0, 0, 0, 0], PORT));
+    let listener = TcpListener::bind(addr).await.unwrap();
+    axum::serve(listener, router()).await.unwrap();
+}
+
+fn router() -> Router {
+    Router::new()
         .route(
             "/schema",
             get(|request| fetch_file(request, SchemaOrDir::Schema)),
         )
-        .nest_service("/", get(|request| fetch_file(request, SchemaOrDir::Dir)));
-
-    let addr = SocketAddr::from(([0, 0, 0, 0], PORT));
-    let listener = TcpListener::bind(addr).await.unwrap();
-    axum::serve(listener, router).await.unwrap();
+        .nest_service("/", get(|request| fetch_file(request, SchemaOrDir::Dir)))
 }
 
 async fn fetch_file(
@@ -79,7 +81,11 @@ fn resolve_hostname(request: &Request) -> String {
 async fn fetch_and_convert_file(
     response: Response<ServeFileSystemResponseBody>,
     hostname: &str,
-) -> Result<impl IntoResponse, String> {
+) -> Result<Response, String> {
+    if response.status() != StatusCode::OK {
+        return Ok(response.into_response());
+    }
+
     let body = Body::new(response);
 
     let data = axum::body::to_bytes(body, usize::MAX).await.unwrap();
@@ -92,5 +98,77 @@ async fn fetch_and_convert_file(
         StatusCode::OK,
         [("content-type", "application/json")],
         new_text,
-    ))
+    )
+        .into_response())
+}
+
+#[tokio::test]
+async fn resolves_schema_json() {
+    let app = router();
+
+    let response = app
+        .oneshot(
+            Request::builder()
+                .uri("/schema")
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await
+        .unwrap();
+
+    assert_eq!(response.status(), StatusCode::OK);
+
+    let body = axum::body::to_bytes(response.into_body(), usize::MAX)
+        .await
+        .unwrap();
+    let data: serde_json::Value = serde_json::from_slice(&body).unwrap();
+    assert_eq!(
+        data["$id"],
+        serde_json::Value::String(String::from("https://example.com/schema#"))
+    );
+}
+
+#[tokio::test]
+async fn resolves_actions_function_json() {
+    let app = router();
+
+    let response = app
+        .oneshot(
+            Request::builder()
+                .uri("/schemas/actions/function.json")
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await
+        .unwrap();
+
+    assert_eq!(response.status(), StatusCode::OK);
+
+    let body = axum::body::to_bytes(response.into_body(), usize::MAX)
+        .await
+        .unwrap();
+    let data: serde_json::Value = serde_json::from_slice(&body).unwrap();
+    assert_eq!(
+        data["$id"],
+        serde_json::Value::String(String::from(
+            "https://example.com/schemas/actions/function.json"
+        ))
+    );
+}
+
+#[tokio::test]
+async fn errors_on_not_found() {
+    let app = router();
+
+    let response = app
+        .oneshot(
+            Request::builder()
+                .uri("/schemas/actions/not_found.json")
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await
+        .unwrap();
+
+    assert_eq!(response.status(), StatusCode::NOT_FOUND);
 }
