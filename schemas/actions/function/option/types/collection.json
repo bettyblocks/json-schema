@@ -12,6 +12,11 @@
     "additional": {
       "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/additional.json"
     },
+    "keepLazyCollections": {
+      "description": "If this collection is a lazy collection, it will keep it as is. If this is set to false it will get all the records belonging to this collection",
+      "type": "boolean",
+      "default": true
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
