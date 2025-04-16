@@ -28,6 +28,11 @@
         ]
       }
     },
+    "allowLazyCollection": {
+      "description": "A lazy collection allows to have a reference to a collection without actually getting all the records. This option controls if the input collection is a lazy collection, it will keep it as is. If this is set to false it will get all the records belonging to this collection before executing the function",
+      "type": "boolean",
+      "default": true
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
