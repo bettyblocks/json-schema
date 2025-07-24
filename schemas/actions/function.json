@@ -69,6 +69,33 @@
     "yields": {
       "description": "Determines whether the function can have other functions nested and if so, what the behaviour should be for executing those functions",
       "enum": ["NONE", "PATHS", "ALL"]
+    },
+    "wasmDescription": {
+      "description": "WebAssembly function description",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "functionName": {
+          "type": "string",
+          "description": "The name of the function that is exported in the wit file"
+        },
+        "interface": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "description": "The name of the interface set in the wit file",
+              "type": "string"
+            },
+            "package": {
+              "description": "The name of the package defined in the wit file, like: example:my-package@0.1.0",
+              "type": "string"
+            }
+          },
+          "required": ["name", "package"]
+        }
+      },
+      "required": ["functionName", "interface"]
     }
   },
   "anyOf": [
