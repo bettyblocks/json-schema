@@ -76,16 +76,19 @@
       "additionalProperties": false,
       "properties": {
         "functionName": {
-          "type": "string"
+          "type": "string",
+          "description": "The name of the function that is exported in the wit file"
         },
         "interface": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "name": {
+              "description": "The name of the interface set in the wit file",
               "type": "string"
             },
             "package": {
+              "description": "The name of the package defined in the wit file, like: example:my-package@0.1.0",
               "type": "string"
             }
           },
