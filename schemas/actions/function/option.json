@@ -96,7 +96,7 @@
     "name": {
       "description": "The name of the option. Can be used to reference this option. Should be unique within scope of function.",
       "type": "string",
-      "pattern": "^(?![0-9])[a-zA-Z0-9_]+$"
+      "pattern": "^(?![0-9])[a-zA-Z0-9_-]+$"
     },
     "label": {
       "description": "The label for option, as shown in the IDE.",
