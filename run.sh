@@ -2,5 +2,5 @@
 
 set -e
 
-yarn --frozen-lockfile
-yarn start
+bun install --frozen-lockfile
+bun start
