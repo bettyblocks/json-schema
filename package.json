@@ -1,10 +1,16 @@
 {
   "name": "json-schema",
+  "module": "./server.ts",
+  "type": "module",
   "scripts": {
-    "start": "bun run server.js",
-    "dev": "bun run --watch server.js"
+    "start": "bun run server.ts",
+    "dev": "bun run --watch server.ts"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "typescript": "^5.9.2"
   }
 }
