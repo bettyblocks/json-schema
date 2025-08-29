@@ -1,6 +1,6 @@
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
+import express, { type Request, type Response } from "express";
+import fs from "node:fs";
+import path from "node:path";
 
 const SCHEMA = "http://json-schema.org/draft-07/schema";
 const HOST = "https://raw.githubusercontent.com";
@@ -9,7 +9,7 @@ const PORT = 9797;
 
 const app = express();
 
-const serve = (request, response, file) => {
+const serve = (request: Request, response: Response, file: string) => {
   console.log("Request for: ", request.url);
   console.log("Serving: ", file);
 
@@ -21,7 +21,7 @@ const serve = (request, response, file) => {
         response.status(500).send("Internal Error: " + error.code + " ..\n");
       }
     } else {
-      const protocol = request.headers.host.includes("localhost")
+      const protocol = request.headers.host?.includes("localhost")
         ? request.protocol
         : "https";
 
@@ -41,7 +41,7 @@ app.get("/schema", (request, response) =>
   serve(request, response, path.join(process.cwd(), "schema.json"))
 );
 
-app.get("*", (request, response) => {
+app.get("/*splat", (request, response) => {
   serve(request, response, path.join(process.cwd(), request.url));
 });
 
