@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/map.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/master/schemas/actions/function/option/types/map.json",
   "title": "Options Type Map",
   "description": "Properties specific to the Map option type.",
   "type": "object",
@@ -9,12 +9,17 @@
     "type": {
       "const": "Map"
     },
+    "allowLazyCollection": {
+      "description": "A lazy collection allows to have a reference to a collection without actually getting all the records. This option controls if the input collection is a lazy collection, it will keep it as is. If this is set to false it will get all the records belonging to this collection before executing the function",
+      "type": "boolean",
+      "default": true
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
       "properties": {
         "required": {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/validation.json#/definitions/required"
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/validation.json#/definitions/required"
         }
       }
     }
