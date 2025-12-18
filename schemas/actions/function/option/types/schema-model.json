@@ -9,6 +9,10 @@
     "type": {
       "const": "SchemaModel"
     },
+    "visibility": {
+      "description": "Controls the visibility of the option in the IDE.",
+      "enum": ["hidden", "readonly"]
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
