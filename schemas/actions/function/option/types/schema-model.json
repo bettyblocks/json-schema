@@ -11,7 +11,7 @@
     },
     "visibility": {
       "description": "Controls the visibility of the option.",
-      "enum": ["hidden", "readonly"]
+      "enum": ["hidden", "readonly", "visible"]
     },
     "validations": {
       "description": "The requirements for the given option.",
