@@ -33,6 +33,10 @@
       "type": "boolean",
       "default": true
     },
+    "schemaModel": {
+      "description": "Reference to a SchemaModel option by name. Only applicable when allowedKinds contains OBJECT or ARRAY.",
+      "type": "string"
+    },
     "validations": {
       "description": "The requirements for the given option.",
       "type": "object",
@@ -43,5 +47,21 @@
       }
     }
   },
-  "required": ["allowedKinds"]
+  "required": ["allowedKinds"],
+  "if": {
+    "properties": {
+      "allowedKinds": {
+        "not": {
+          "contains": {
+            "enum": ["OBJECT", "ARRAY"]
+          }
+        }
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "schemaModel": false
+    }
+  }
 }
