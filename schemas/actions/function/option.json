@@ -39,9 +39,6 @@
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/action.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/ai-agent.json"
-        },
-        {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/authentication-profile.json"
         },
         {
