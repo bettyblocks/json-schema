@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/software-api.json",
+  "$id": "https://raw.githubusercontent.com/bettyblocks/json-schema/edge/schemas/actions/function/option/types/software-api.json",
   "title": "Options Type SoftwareApi",
   "description": "Properties specific to the SoftwareApi option type. Used to select a product in the software catalog: connected external software, or a Betty application with a REST API.",
   "type": "object",
@@ -14,7 +14,7 @@
       "type": "object",
       "properties": {
         "required": {
-          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/validation.json#/definitions/required"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/validation.json#/definitions/required"
         }
       }
     }
