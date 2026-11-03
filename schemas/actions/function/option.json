@@ -11,6 +11,7 @@
         "type": {
           "enum": [
             "Action",
+            "AIAgent",
             "AuthenticationProfile",
             "Boolean",
             "Collection",
@@ -27,6 +28,7 @@
             "Record",
             "Select",
             "SchemaModel",
+            "SoftwareApi",
             "Text",
             "Value"
           ]
@@ -35,6 +37,9 @@
       "oneOf": [
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/action.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/ai-agent.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/authentication-profile.json"
@@ -83,6 +88,9 @@
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/schema-model.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/software-api.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/text.json"
