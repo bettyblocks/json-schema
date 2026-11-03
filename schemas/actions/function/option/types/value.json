@@ -21,7 +21,6 @@
           "FILE",
           "IMAGE",
           "INTEGER",
-          "JSON",
           "OBJECT",
           "RECORD",
           "STRING"
