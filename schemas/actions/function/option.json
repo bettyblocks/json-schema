@@ -26,6 +26,7 @@
             "Record",
             "Select",
             "SchemaModel",
+            "SoftwareApi",
             "Text",
             "Value"
           ]
@@ -79,6 +80,9 @@
         },
         {
           "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/schema-model.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/software-api.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/text.json"
