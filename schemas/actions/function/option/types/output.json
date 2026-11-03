@@ -11,7 +11,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "enum": ["Boolean", "JSON", "Number", "Text"]
+          "enum": ["Boolean", "Number", "Text"]
         },
         "scoped": {
           "type": "boolean"
