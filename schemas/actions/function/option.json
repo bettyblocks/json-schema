@@ -11,7 +11,7 @@
         "type": {
           "enum": [
             "Action",
-            "AIProvider",
+            "AIAgent",
             "AuthenticationProfile",
             "Boolean",
             "Collection",
@@ -37,7 +37,7 @@
           "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/action.json"
         },
         {
-          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/ai_provider.json"
+          "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/ai-agent.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/edge/schemas/actions/function/option/types/authentication-profile.json"
