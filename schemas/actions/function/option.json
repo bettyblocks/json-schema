@@ -11,6 +11,7 @@
         "type": {
           "enum": [
             "Action",
+            "AIAgent",
             "AuthenticationProfile",
             "Boolean",
             "Collection",
@@ -34,6 +35,9 @@
       "oneOf": [
         {
           "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/action.json"
+        },
+        {
+          "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/ai-agent.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/acceptance/schemas/actions/function/option/types/authentication-profile.json"
