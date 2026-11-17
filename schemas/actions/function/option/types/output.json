@@ -11,7 +11,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "enum": ["Boolean", "Number", "Text"]
+          "enum": ["Boolean", "Decimal", "Number", "Text"]
         },
         "scoped": {
           "type": "boolean"
@@ -92,7 +92,7 @@
           "const": "Array"
         },
         "dataType": {
-          "enum": ["INTEGER", "STRING", "SCHEMA"]
+          "enum": ["INTEGER", "DECIMAL", "STRING", "SCHEMA"]
         },
         "schemaModel": {
           "type": "string"
@@ -110,7 +110,7 @@
         },
         {
           "properties": {
-            "dataType": { "enum": ["INTEGER", "STRING"] },
+            "dataType": { "enum": ["INTEGER", "DECIMAL", "STRING"] },
             "schemaModel": false
           }
         }
