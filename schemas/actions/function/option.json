@@ -15,7 +15,6 @@
             "AuthenticationProfile",
             "Boolean",
             "Collection",
-            "Decimal",
             "InputVariableMap",
             "Map",
             "Model",
@@ -49,9 +48,6 @@
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/collection.json"
-        },
-        {
-          "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/decimal.json"
         },
         {
           "$ref": "/bettyblocks/json-schema/master/schemas/actions/function/option/types/input-variable-map.json"
